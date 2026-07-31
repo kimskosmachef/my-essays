@@ -301,6 +301,87 @@ After that — as you wish. You can look closer. There is enough detail for ever
 
 ------------------------------------------------------------------------
 
+## Formulas
+
+The whole essay in a single column of symbols — part by part. The layer tag (\[textbook\] / \[framework\] / \[hypothesis\]) is kept: translating a claim into a formula does not turn a hypothesis into a theorem.
+
+**1. The Cloud** · \[textbook\]
+
+- `x = (x₁, …, xₙ) ∈ ℝⁿ` — A person is written as a set of numbers: each is an answer to one independent question of the questionnaire, and the person is a point in the space of those answers.
+- `X = {x₁, …, x_N}, N ≈ 8·10⁹` — All of humanity is a cloud of eight billion such points; the object of study is not the person but the shape of the cloud.
+- `n_eff = rank(data)` — Dimensionality is the number of genuinely independent questions, not the number of their names: "age" and "year of birth" are one axis written twice.
+
+**2. The Shape of the Cloud** · \[textbook\]
+
+- `corr(xᵢ, xⱼ) > 0` — All measurable abilities correlate positively: whoever is strong at one is, on average, strong at another. This is the "positive manifold."
+- `Σ = (1/N)·Σ(x−μ)(x−μ)ᵀ = V Λ Vᵀ` — The covariance matrix holds the shape of the cloud; its decomposition is a rotation of the coordinate system onto the principal axes of the ellipsoid.
+- `g = v₁ᵀ(x−μ)`, share `λ₁ / Σλ` — General intelligence g is not an assumption but the first principal axis of the cloud; the share λ₁/Σλ says how much of the total spread it takes.
+- `wᵢ ∝ λᵢ` — An axis's importance is not assigned but computed: its weight is its contribution to the spread; axes with little spread barely distinguish anything and are discarded.
+- `IQ ∝ ⟨x, v₁⟩`; `π(x) = π(x′)` for `x ≠ x′` — IQ is a shadow: the projection of the whole vector onto the single axis g. Different profiles cast the same shadow, and by it they cannot be told apart.
+- `x = Λf + ε` — The answers decompose into common factors f (what stands behind many questions at once) and the unique part ε of each question.
+- `x ∈ ext conv(X) ⟺ ∃ u : ⟨x, u⟩ = max_X ⟨·, u⟩` — A genius is a vertex of humanity's convex hull: one whose vector sticks out in at least one direction and "holds up the rubber band," not one who is above average at everything.
+- sign `+`, not `−` — The trade-off myth does not exist: abilities are linked positively, not inversely; the brilliant mathematician who cannot say hello is a rare exception, not a law.
+
+**3. The Point Is Alive** · \[textbook\]
+
+- `x = x(t)` — A person does not stand still: the point moves in time — learns, forgets, counts worse by evening.
+- `x(t) = x_slow(t) + x_fast(t)`, `τ_slow ≫ τ_fast` — The motion splits into layers: a slow layer (knowledge, skills — years) and a fast one (mood, fatigue, coffee — hours).
+- `x_slow(t) = ⟨x⟩` on the fast scale — What we call someone's "level" is the slow average of a fast dance: the smoothed, low-frequency component of the trajectory.
+- `trait = x_slow`, `state = x(t) − x_slow(t)` — A trait is a stable position, a state is a momentary deviation; mixing them in one table is a category error.
+- `μ = μ(t)` — Not only the point moves but the frame of reference too: a generation's average level drifts (Flynn) — both up and down.
+
+**4. The Second Space** · \[textbook\]
+
+- `A ⊂ P`, `dim A < dim P` — There are two spaces, and they are nested: abilities A are only a part of the wide space of personality P, which also holds character, values, taste.
+- `π_A(x)` — Abilities are the projection of the whole person onto the subspace A; from here on "a person" means a point in the wide space P.
+- `{Σ, V Λ Vᵀ, conv}` carry over — The entire apparatus of parts 1–3 carries over into the wide space verbatim: the geometry is the same, only the data change.
+- EI ∈ `A` / "EQ" ∈ `P ∖ A` — Emotional intelligence sits on the seam: as a measurable factor it belongs to the space of abilities, as the fashionable "EQ" it is a loose mix of traits in the wide space.
+
+**5. Three Stages of Knowing** — the core.
+
+*Stage 1 — the shrinking body of uncertainty* · \[textbook\]
+
+- `p(θ)` — wide — A first impression is not a point but a wide region of guesses: the prior "the person is somewhere in here."
+- `p(θ | obs.) ∝ p(obs. | θ)·p(θ)` — Every contact is a noisy measurement; Bayes describes the narrowing of the region exactly (in engineering — the Kalman filter: the ellipsoid shrinks and turns slightly).
+- `dim(image₀) ≈ 2` — The starting outline is almost two-dimensional: a stranger is instantly rated on two axes — warmth and competence — and the rest is filled in over months.
+- simplex — `N+1` vertices in `ℝᴺ` — The cheapest body of full dimension (triangle, tetrahedron…): minimum anchor points for maximum coverage — exactly like a coarse first impression.
+
+*Stage 2 — a person as a function* · \[textbook → framework\]
+
+- `f : situation → reaction` — The ellipsoid will not converge to a point, because the target is not a point but a function: the stable pattern "if situation A, then reaction X."
+- `f ~ GP(m, k)` — A Gaussian process is what estimates such a function from a finite number of observations.
+- `σ²(s)` small where observed — Its needed property: the band of uncertainty is narrow where the person was seen and wide where they were not.
+- surprise = extrapolation — "Suddenly revealed themselves" is no surprise: we looked, for the first time, into a context where the band was as wide as a gate while we took it for a line.
+
+*Stage 3 — the fractal* · \[framework + hypothesis\]
+
+- `N(ε) ~ ε^(−D)`, `D` fractional — The number of significant details grows as a power law under magnification and does not plateau — that is fractional dimension (measured by box-counting).
+- `R(t)`: plateau vs `~ t^α` — The measure of the image's detail is the number of distinguishable if-then rules about a person; a plateau ⇒ the image is finite (hypothesis false), unbounded growth ⇒ the image is fractal.
+- strange attractor, `D_Lorenz ≈ 2.06` — In the dynamical version a person is a process: trajectories wind onto an attractor, and the attractors of chaotic systems are fractal (Lorenz ≈ 2.06).
+- `λ_max > 0`, `δ(t) ≈ δ(0)·e^(λ_max·t)` — First difference from the Koch snowflake: nearby trajectories diverge exponentially — the shape (the "character") is stable and learnable, but the continuation is unpredictable in principle.
+- `rule_{t+1} = U(rule_t, experience_t)` — Second, and it matters more: the rule is rewritten by its own execution — while the observer traces the lower scales, the upper one has already moved.
+- honest caveat — The exponent gives unpredictability forward in time; on the unknowability of structure itself the metaphor has a claim only under the reading "a person is a generating process, not a static object with endless rooms."
+- `y(t) = [s(t), s(t−τ), …, s(t−(m−1)τ)]` (Takens) — From one variable observed long enough (for example, from conversations alone), the geometry of the entire hidden attractor can be reconstructed — up to a smooth deformation.
+
+**6. Three Falsifiable Hypotheses** · \[hypothesis\]
+
+- `accuracy = f(number of contexts)`, `∂accuracy/∂T ≈ 0` — Predictive accuracy grows with the number of distinct contexts of observation, not with total tenure: two years in five roles give more than ten in one.
+- `R(t) → ∞` — The number of distinguishable if-then rules about a close person grows without saturation as acquaintance deepens.
+- `dim(image, t)`: `≈ 2 → ↑` — The dimensionality of the image grows with acquaintance: it starts near two (warmth, competence) and increases.
+- `rank(data)` / convergence — The old arguments become computable: "how many intelligences" = the rank of the data matrix; "can a person be known completely" = whether the refinement procedure converges.
+
+**7. Self-Criticism** · \[framework\]
+
+- `X ⊂ ℳ`, `dim ℳ = d < n`, `κ < 0` — The linear picture is a first approximation: the real space may be a curved manifold, and then the "principal axis" becomes a principal curve, distances become geodesic, and the hierarchy of abilities hints at negative curvature (a hyperbolic embedding).
+
+**Emblem** (the conclusion of part 5):
+
+> `R(t) ↛ const` — Knowing does not converge — and not for lack of time, but by the construction of the object: it is a generating process (`λ_max > 0`, a self-rewriting rule), not a static point.
+
+**Rigorous vs schematic.** Rigorous bricks: `Σ = VΛVᵀ`, `g = v₁ᵀ(x−μ)`, Bayes/Kalman, `f ~ GP(m,k)`, `N(ε) ~ ε^(−D)`, `δ(t) ≈ δ(0)e^(λt)`, Takens. Schematic (notation, not theorem): `rule_{t+1} = U(rule_t, ·)` and the expression `R(t) ~ t^α` — these fix the form of the claim rather than being derived from it. That is exactly the "framework/hypothesis" boundary from part 5.
+
+------------------------------------------------------------------------
+
 ## Acknowledgments
 
 Boris Tsilevich — for the question about axis weights, out of which half of part 2 grew. Andrei Baulinsh, Sasha Erashoff, Lev Lisagor — for a harsh and useful takedown of the draft: part 7 exists because of them.
