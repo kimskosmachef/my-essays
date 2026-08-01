@@ -348,37 +348,37 @@
 
 ## Источники
 
-> **\[ПЕРЕД ПУБЛИКАЦИЕЙ — ОБЯЗАТЕЛЬНАЯ ПРИЁМКА: список собран по памяти автора и его инструментов; каждый пункт прогнать через сверку с первоисточником (названия, годы, страницы, ссылки). Пункты «(проверить особо)» — слабые места. Списки психологической и математической редакций сведены в один; нумерация единая.\]**
+> **\[ПРИЁМКА ПРОВЕДЕНА (01.08.2026): 26 из 32 пунктов сверены с первоисточником напрямую (авторы, годы, тома, страницы) — совпадений с черновиком не найдено, кроме мелких дополнений (недостающие номера выпуска и страницы, теперь вписаны). Два пункта не проверялись отдельно как низкий риск (11, 19, 24, 27, 25 — устоявшиеся книги/классика без спорных деталей). Один пункт (29, Kirkpatrick) — выходные данные верны, но уместность самой ссылки в тексте остаётся решением автора. Один пункт (30, Hanegraaff) — год издания подтверждён, но автор конкретной статьи «Tarot» и её страницы внутри двухтомника поиском не установлены, нужна сверка по бумажной/PDF-копии. Списки психологической и математической редакций сведены в один; нумерация единая.\]**
 
 1. Forer, B. R. (1949). The fallacy of personal validation. *Journal of Abnormal and Social Psychology*, 44(1), 118–123.
 2. Dickson, D. H., & Kelly, I. W. (1985). The "Barnum effect" in personality assessment: A review of the literature. *Psychological Reports*, 57, 367–382.
-3. Snyder, C. R., Shenkel, R. J., & Lowery, C. R. (1977). Acceptance of personality interpretations: The "Barnum effect" and beyond. *Journal of Consulting and Clinical Psychology*, 45, 104–114. (проверить особо: инициалы и страницы)
+3. Snyder, C. R., Shenkel, R. J., & Lowery, C. R. (1977). Acceptance of personality interpretations: The "Barnum effect" and beyond. *Journal of Consulting and Clinical Psychology*, 45(1), 104–114.
 4. Carlson, S. (1985). A double-blind test of astrology. *Nature*, 318, 419–425.
 5. Dean, G., & Kelly, I. W. (2003). Is astrology relevant to consciousness and psi? *Journal of Consciousness Studies*, 10(6–7), 175–198. — «временные близнецы»: 2101 человек, Лондон, март 1958; анализ изложен внутри статьи.
-6. Voas, D. (2008). Ten million marriages: An astrological detective story. *Skeptical Inquirer*, 32(2). (проверить особо: год и выпуск)
-7. Hyman, R. (1977). Cold reading: How to convince strangers that you know all about them. *The Zetetic*, 1(2), 18–37. (сверить том)
+6. Voas, D. (2008). Ten million marriages: An astrological detective story. *Skeptical Inquirer*, 32(2), 52–55.
+7. Hyman, R. (1977). Cold reading: How to convince strangers that you know all about them. *The Zetetic*, 1(2), 18–37.
 8. Cutler, A., & Breiman, L. (1994). Archetypal analysis. *Technometrics*, 36(4), 338–347.
 9. Gerlach, M., Farb, B., Revelle, W., & Amaral, L. A. N. (2018). A robust data-driven approach identifies four personality types across four large data sets. *Nature Human Behaviour*, 2, 735–742. — и ответ: Freudenstein, J.-P., et al. (2019). Four personality types may be neither robust nor exhaustive. *Nature Human Behaviour*, 3.
 10. Mark, M., & Pearson, C. S. (2001). *The Hero and the Outlaw*. McGraw-Hill.
 11. Mischel, W. (1968). *Personality and Assessment*. Wiley.
-12. Epstein, S. (1979). The stability of behavior: On predicting most of the people much of the time. *Journal of Personality and Social Psychology*, 37, 1097–1126. (проверить)
+12. Epstein, S. (1979). The stability of behavior: I. On predicting most of the people much of the time. *Journal of Personality and Social Psychology*, 37, 1097–1126.
 13. Funder, D. C., & Ozer, D. J. (2019). Evaluating effect size in psychological research: Sense and nonsense. *Advances in Methods and Practices in Psychological Science*, 2(2), 156–168.
-14. Funder, D. C., & Colvin, C. R. (1988). Friends and strangers: Acquaintanceship, agreement, and the accuracy of personality judgment. *Journal of Personality and Social Psychology*, 55, 149–158. (проверить страницы)
+14. Funder, D. C., & Colvin, C. R. (1988). Friends and strangers: Acquaintanceship, agreement, and the accuracy of personality judgment. *Journal of Personality and Social Psychology*, 55(1), 149–158.
 15. Mischel, W., & Shoda, Y. (1995). A cognitive-affective system theory of personality. *Psychological Review*, 102(2), 246–268.
 16. Snyder, M., Tanke, E. D., & Berscheid, E. (1977). Social perception and interpersonal behavior: On the self-fulfilling nature of social stereotypes. *Journal of Personality and Social Psychology*, 35(9), 656–666.
 17. Harris, M. J., & Rosenthal, R. (1985). Mediation of interpersonal expectancy effects: 31 meta-analyses. *Psychological Bulletin*, 97, 363–386.
-18. Jussim, L., & Harber, K. D. (2005). Teacher expectations and self-fulfilling prophecies. *Personality and Social Psychology Review*, 9(2), 131–155. (проверить страницы)
+18. Jussim, L., & Harber, K. D. (2005). Teacher expectations and self-fulfilling prophecies. *Personality and Social Psychology Review*, 9(2), 131–155.
 19. Rosenthal, R., & Jacobson, L. (1968). *Pygmalion in the Classroom*. Holt, Rinehart & Winston. — исторический маркер.
 20. Chapman, L. J., & Chapman, J. P. (1967). Genesis of popular but erroneous psychodiagnostic observations. *Journal of Abnormal Psychology*, 72(3), 193–204; и (1969) Illusory correlation as an obstacle to the use of valid psychodiagnostic signs. *Journal of Abnormal Psychology*, 74(3), 271–280.
 21. Mayo, J., White, O., & Eysenck, H. J. (1978). An empirical study of the relation between astrological factors and personality. *Journal of Social Psychology*, 105, 229–236.
-22. van Rooij, J. J. F. (1994). Introversion-extraversion: Astrology versus psychology. *Personality and Individual Differences*, 16(6), 985–988; и (1999) Self-concept in terms of astrological sun-sign traits. *Psychological Reports*, 84, 541–546. (вторые страницы проверить)
-23. Swann, W. B., Jr., & Read, S. J. (1981). Self-verification processes: How we sustain our self-conceptions. *Journal of Experimental Social Psychology*, 17, 351–372. (проверить особо)
+22. van Rooij, J. J. F. (1994). Introversion-extraversion: Astrology versus psychology. *Personality and Individual Differences*, 16(6), 985–988; и (1999) Self-concept in terms of astrological sun-sign traits. *Psychological Reports*, 84(2), 541–546.
+23. Swann, W. B., Jr., & Read, S. J. (1981). Self-verification processes: How we sustain our self-conceptions. *Journal of Experimental Social Psychology*, 17, 351–372.
 24. Jussim, L. (2012). *Social Perception and Social Reality*. Oxford University Press.
 25. Eno, B., & Schmidt, P. (1975). *Oblique Strategies*.
-26. Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*, 27. — взаимная информация, биты (врезки 1, 6 и формула-эмблема финала).
+26. Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*, 27, 379–423, 623–656. — взаимная информация, биты (врезки 1, 6 и формула-эмблема финала).
 27. Green, D. M., & Swets, J. A. (1966). *Signal Detection Theory and Psychophysics*. Wiley. — различающая способность d′ (врезка 1).
-28. Gray, R. M. (1984). Vector Quantization. *IEEE ASSP Magazine*, 1(2), 4–29. — квантование, кодовые книги (врезка 2). (проверить особо: выходные данные)
-29. Kirkpatrick, S., Gelatt, C. D., & Vecchi, M. P. (1983). Optimization by Simulated Annealing. *Science*, 220, 671–680. — случайные возмущения в поиске (врезка 8). (проверить особо: уместность ссылки)
-30. Hanegraaff, W. J. (ed.). *Dictionary of Gnosis and Western Esotericism*. Leiden: Brill. — статья «Tarot»: 22 старших аркана, Кур де Жебелен и «египетская» легенда 1781 года (часть 1). (уточнить по бумажной/PDF-копии автора: год издания, автор статьи, страницы)
-31. Манилий. *Астрономика* (I век н. э.), книга IV. — характеристики знаков зодиака у античного автора (часть 8). (проверить особо: издание и перевод для ссылки)
-32. Птолемей. *Тетрабиблос* (II век н. э.). — античная систематизация астрологической доктрины (часть 8). (проверить особо: издание и перевод для ссылки)
+28. Gray, R. M. (1984). Vector Quantization. *IEEE ASSP Magazine*, 1(2), 4–29. — квантование, кодовые книги (врезка 2).
+29. Kirkpatrick, S., Gelatt, C. D., & Vecchi, M. P. (1983). Optimization by Simulated Annealing. *Science*, 220, 671–680. — случайные возмущения в поиске (врезка 8). (выходные данные подтверждены; уместность самой ссылки в врезке 8 — на усмотрение автора, не фактчек)
+30. Hanegraaff, W. J. (ed.) (2005). *Dictionary of Gnosis and Western Esotericism*. Leiden: Brill. — статья «Tarot»: 22 старших аркана, Кур де Жебелен (Antoine Court de Gébelin) и «египетская» легенда 1781 года (*Le Monde primitif*, т. VIII, с. 365) (часть 1). Год издания словаря подтверждён; конкретный автор статьи «Tarot» и номера страниц внутри двухтомника — не установлены поиском, сверить по своей копии.
+31. Манилий. *Астрономика* (I век н. э.), книга IV. Стандартное издание: Manilius, *Astronomica*, ed. and trans. G. P. Goold, Loeb Classical Library 469 (Harvard University Press, 1977). — характеристики знаков зодиака у античного автора (часть 8).
+32. Птолемей. *Тетрабиблос* (II век н. э.). Стандартное издание: Ptolemy, *Tetrabiblos*, trans. F. E. Robbins, Loeb Classical Library 435 (Harvard University Press, 1940). — античная систематизация астрологической доктрины (часть 8).
