@@ -14,6 +14,7 @@
 | — | Двойной Уроборос (виньетка) | `vignettes/ouroboros.md` | — | тезисы |
 | — | Звезда (виньетка) | `vignettes/star.md` | — | тезисы; место в серии не решено |
 | 99 | Финал: мягкая математика неточного | `essays/99-final-softcomputing/theses.md` | — | тезисы; формат (эссе или манифест) не решён |
+| — | Два интеллекта как игра (soft OR / hypergame / drama theory) | `essays/game-theory-mutual-cognition/theses.md` | — | тезисы; место в серии не решено |
 
 ## Вспомогательное
 
