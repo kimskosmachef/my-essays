@@ -1,0 +1,611 @@
+# A Game with an Unknown Frame: Two Intelligences Reading Each Other
+
+*An essay about what happens when two people try to read each other at the same time. Fifth in the "Geometry of Intelligence" series: the first argued that you cannot finish reading another person; the second, that instead of reading, people finish writing them; the third, that accuracy will rise but hit a wall; the fourth supplied the instruments for working with what doesn't converge. This one is about the two-sided case.*
+
+*Working title; the register of the series has not been checked.*
+
+------------------------------------------------------------------------
+
+## 0. The Opening Scene
+
+We were sitting in a café by Ķīšezers, talking about one of my posts. My friend reads the headline and says:
+
+— So why did you even write this?
+
+I began answering on the merits. That the news mattered, that the Latvian press hadn't covered it, that readers had asked for context, that I'd checked two sources. A normal journalist's answer.
+
+He nodded and said:
+
+— Got it. You want to be counted as one of us.
+
+And that's where it clicked.
+
+His "why" wasn't about the motive of the text. His "why" was about my motive. In his game the move wasn't "what is written" but "who are you standing with by writing it." In my game the move was "what is going on." We were exchanging coherent replies, they fit together — question, answer, nod — and both of us were sure we were playing the same thing.
+
+We were playing different things.
+
+I was answering the question "what does this mean?" He was asking the question "who are you after this?" My line about two sources, inside his game, sounded like "look how thorough I am," not like "here's what happened." And his nod, "got it," meant in my game "got the argument," and in his, "got which role you're picking for yourself."
+
+Nobody lied. Nobody was being slow. There simply was no indicator. The conversation ran smoothly precisely because smoothness doesn't require matching frames — it's enough that the replies fit together grammatically.
+
+I remembered that phrase — "why did you write this" (stuck it on the fridge as a note) — because it lands perfectly in both games at once. And that is exactly why it clarifies nothing.
+
+------------------------------------------------------------------------
+
+## 1. The Thesis, Up Front
+
+As in the previous texts — the claim before the explanations.
+
+Classical game theory solves the problem under one condition: **the game itself is common knowledge**. The players are known, the moves are known, the payoffs are known. If something is missing, there's a standard repair — Harsanyi: introduce a "type" for the opponent, put a probability distribution over types, and the problem becomes solvable again.
+
+Getting to know another person doesn't fit that scheme, and not because we compute badly.
+
+**What's unknown isn't the payoff function. What's unknown is the structure.** Are we even playing the same game. Do we understand the same thing by a move. Does the other person know what I think of him, and what does he think about what I think. This is not uncertainty inside a known problem — it's uncertainty about the problem itself.
+
+There's a name for this situation, and it's older than game theory. In 1973 Herbert Simon described a class of **ill-structured problems** — those where it isn't specified what counts as a condition, what counts as a solution, and by what sign a solution is to be recognized. The term should not be confused with a similar one: an "ill-posed problem" in mathematics means something else — that the solution is unstable or non-unique under a perfectly definite formulation. Not so here. Here **the formulation itself is undefined.**
+
+The thesis of this text is that getting to know another intelligence is not an ill-structured problem **inside** a game, but an ill-structured **frame of the game itself**. Simon carried his notion into subject areas; I carry it into the foundations of game theory.
+
+And he himself has a caveat I can't leave out, because it closes this text onto the previous one. Simon writes that **the boundary between well- and ill-structured problems is vague, shifting, and resists formalization.** That is, the author of the notion begins by declaring the notion itself fuzzy — not two-valued, but admitting degree. The fourth essay was entirely about such boundaries; here one of them shows up in the foundation, before I've managed to build anything at all.
+
+And from this, the main claim, the reason all of this is being written:
+
+**Understanding another person is not the result of a game but a change of game in the course of playing it.** Not the computation of an equilibrium within a given structure, but the convergence or divergence of the structure itself. And I'll be arguing that the divergence here is not an accident and not a consequence of inattention, but a property of the construction.
+
+This claim has two opponents, as in the fourth essay.
+
+**The opponent on the right — the Bayesian camp.** He'll say: you're overcomplicating. All this is an ordinary game of incomplete information. Put a distribution over the possible frames, compute the equilibrium, and no special apparatus is needed. He has to be answered formally, not waved off — and below I will answer, while admitting that on one stretch he is right.
+
+**The opponent on the left — "life is a game."** The popular philosophy where game theory works as a metaphor and therefore forbids nothing. Here the danger is higher than in the fourth essay, and I'll say right away why. The class of methods I'll be leaning on **is itself accused of unfalsifiability**, and the accusation was not invented by enemies. I'll lay it out myself, in the eighth part, in the words of a person who defends those methods.
+
+The criterion by which I should be judged is the same as last time: if after reading you can't tell a claim about structure from a pretty phrase about the complexity of relationships — the text has failed.
+
+------------------------------------------------------------------------
+
+## 2. The Fork: The Frame Is Unknown, Not the Payoffs
+
+**\[textbook\]**
+
+First I need to separate my problem from the neighboring one, or the whole conversation will be about one thing while the reader thinks about another.
+
+**A Bayesian game.** You don't know what the opponent wants. The repair: assume he comes in several types, put a probability distribution over the types, and solve a game in which nature first picks the type and then the players play. The structure is **given in full** — it's known what types there are, what payoffs each has, what moves are available. Only the outcome of the draw is unknown.
+
+**Our case.** The roster of types is unknown. It's unknown whether this is even that class of games. It's unknown whether your partner thinks he's in the same game as you.
+
+The difference looks philosophical until you find where it leaves an **arithmetical trace**. And it does, and that's the shortest way to separate the two cases.
+
+A probability distribution is obliged to normalize: the sum over all options equals one. More belief in one hypothesis necessarily means less in another — the budget is fixed. This is not a property of the world but an axiom, and the whole Bayesian construction rests on it.
+
+Degrees of plausibility of frames carry no such budget. You can hold two incompatible frames both highly plausible. You can hold none of them plausible.
+
+> **Math inset 1. The simplex versus the free sum, for the second time in the series.** \[textbook\] In a Bayesian game, belief about the opponent's types lives on a **simplex**: `∑ᵢ p(typeᵢ) = 1`, `p ≥ 0`. That is the same construction that in the fourth essay separated probability from fuzziness — and here it separates a Bayesian game from a hypergame. In a hypergame the plausibilities of frames are unconnected: `μ(frameᵢ) ∈ [0,1]` for each, and **the sum is arbitrary**. Formally one line is gone; in substance the budget is gone. The difference can be checked by addition, and that isn't a figure of speech: ask a person about each frame separately, without requiring the sum to come to anything, and then add it up and see whether it equals one. **And here three different things must be separated, or the next paragraph of the main text will mislead you.** `∑ p = 1` is an **axiom**: that's how probability is built, by definition. That a person answering questions doesn't hold that sum is a **violation of the axiom by a human**, a fact about people, not about mathematics. And a free `∑ μ` is the **absence of such an axiom in the apparatus itself**: a fuzzy set doesn't violate normalization, it doesn't postulate it, and has nothing to violate. Three cases, and they must not be confused: otherwise it will look as though "the sum isn't one" is a mark of sloppiness, whereas for memberships it is the construction.
+
+**And here I'm obliged to admit that on one stretch the Bayesian camp is right.** I say it first, before any argument.
+
+The question "do human degrees of belief normalize" was studied for thirty years, and the answer turned out to be in two parts. When there are **two** alternatives — a hypothesis and its negation — the estimates add to about one. Here a person behaves exactly like a probability textbook. But as soon as there are more alternatives and they're named separately, the sum systematically **exceeds** one, and the excess grows the more finely the fan is divided. The mechanism is known: a description named in detail collects more support than the same thing named by one general word.
+
+Hence the boundary of my claim, and it is narrow on purpose.
+
+**With two frames — "we're playing this" or "we're not playing this" — the Bayesian scheme is adequate, and a special apparatus is superfluous there.** My claim begins where there are three frames or more.
+
+I pay that price deliberately, and here's why it's acceptable. The two-frame case almost never occurs in mutual recognition. When two people talk, the possible frames are always more than two: he's arguing on the merits, or asserting himself, or speaking for a third listener, or not arguing at all but tired. Precisely where the apparatus is needed, the budget ought to break — and to break harder the richer the fan.
+
+**A separate note about the word "soft," and it belongs here rather than at the end.**
+
+The fourth essay was called "the soft mathematics of an imprecise person" and was built on **soft computing** — the tradition running from Zadeh: fuzzy sets, membership functions, t-norms. The class of methods this text leans on is called **Soft OR**, "soft operational research," and Howard's "soft" game theory belongs to it.
+
+**These are different traditions, and the coincidence of the word is accidental.** One grew out of mathematical logic and control theory; the other out of the practice of operational research, out of work on problems where the client himself doesn't know what he wants. They have as much in common as two people with the same surname. If you came here from the fourth essay expecting a continuation of that softness — don't. Zadeh's apparatus will appear in this text too, but along a different line, and I'll say where.
+
+------------------------------------------------------------------------
+
+## 3. The Fuzzy Side: Frames Coincide by Degree
+
+**\[textbook\] + \[framework\]**
+
+Now we can build.
+
+The question "are we playing the same game" has no answer "yes" or "no." It has an answer **by degree**. We may coincide on the frame by nine tenths — differing in a small thing that will surface in half an hour. We may coincide by half: the conversation goes on, but each takes away his own. We may barely coincide at all, while continuing to exchange grammatically coherent replies.
+
+I'll write this as `μ(frame_A ≈ frame_B) ∈ [0,1]` — the degree to which frames coincide. It is exactly the apparatus the fourth essay applied to a person alone, only applied to a pair.
+
+The theory that works with this case exists and is called **hypergame theory**. Its basic thought is simple and unpleasant: each player is rational — but **inside his own, possibly wrong, model of the other's game**. That is, there is no single game of incomplete information. There are two different games, one in each head, and they are not obliged to coincide.
+
+**And here, in carrying the apparatus over from the fourth essay, one property breaks. It breaks interestingly, and shouldn't be hidden.**
+
+In the fourth essay, "up to" was formalized as a **fuzzy equivalence relation**: reflexivity, symmetry, weakened transitivity. Symmetry there was free — if one intelligence resembles another, the other resembles the first; the question is about the pair.
+
+Coincidence of frames is **not symmetric**. I can model your game well while you model mine badly. This is not a defect of the description — it is exactly what hypergame theory says: the models belong to each separately, and their quality is not obliged to match.
+
+> **Math inset 2. A directed relation instead of an equivalence.** \[textbook\] A fuzzy equivalence relation requires three properties: `μ_R(x,x) = 1` (reflexivity), `μ_R(x,y) = μ_R(y,x)` (symmetry) and T-transitivity `μ_R(x,z) ≥ T(μ_R(x,y), μ_R(y,z))`. Carried over to a pair, the first and third survive; **the second is dropped**: `μ(A→B) ≠ μ(B→A)`. What comes out is not an equivalence but a fuzzy **preorder** — a directed relation. The practical consequence matters more than the formal one: the pair acquires a measurable quantity, **the difference of the two directed degrees**, and that is the skew of understanding. Before, one could only talk about it; now it can be computed.
+
+**This skew has an empirical record, and it's forty years old.**
+
+**\[textbook\]**
+
+A review of eight studies with five hundred and sixty-nine participants gives three results, and each strikes its own place in this text.
+
+**First.** People build their picture of how they are seen **not from feedback but from their own self-image**. The average correlation between "how I see myself" and "how I think I'm seen" is **0.87** (a synthesis of eight studies, 569 participants). That is very high: a link of that strength is rare in personality psychology, and usually it means the two quantities are measuring nearly the same thing. The reverse channel barely works: one's own image is substituted into it.
+
+**Second, and this is literally the opening scene of this essay, only measured.** People **overestimate the consistency** of the impressions they make. Participants believed they made roughly the same impression on all their partners. The partners, rating the same person, agreed with each other weakly. That is, everyone is sure he's playing the same game with everyone — and the partners' frames differ.
+
+**Third.** Accuracy is higher at the aggregate level than at the level of a particular pair. A person understands better how he's seen "in general" than how he's seen by this particular interlocutor. The same seam that in the third and fourth essays ran between the averaged trait and the individual pattern.
+
+**And a counterweight I'm obliged to name myself.** Later work showed it isn't only projection: others' impressions predict a person's sense of his own reputation **beyond** what his self-image explains. Genuine insight into how you're seen does exist. The channel is weak, but not null. Both halves have to be taken — otherwise the first specialist in interpersonal perception will catch me being one-sided.
+
+**A caveat about what exactly was measured here.** These studies measured **meta-perception** — how accurately a person knows how another sees him. My `μ(A→B)` is different: how accurately A models the game that B thinks they're playing. The quantities are related but not the same. What carries over without strain is the **measurement apparatus**: a round-robin design in which observations within a pair decompose into an actor effect, a partner effect, and a **relationship** effect — what is specific to this pair in this direction. The three results above work as motivation, not as a substitute for the measurement.
+
+------------------------------------------------------------------------
+
+## 4. Different Rule Sets: Why Repetition Doesn't Help
+
+**\[textbook\] + \[framework\]**
+
+Everything so far has been about **representations** differing between two people. Now the third layer, and it's about something else: not only representations differ, but **procedures**.
+
+Each conducts the game by his own set of rules. By his own way of updating the model of the other after each reply, his own way of adding partial impressions into a whole, his own way of deciding when it's time to act.
+
+**First about the word "heuristic," because it carries two loads.**
+
+*The first load is colloquial.* In popular usage "heuristic" has become a synonym for error: a bias, a cut corner, the thing that makes a human worse than a calculator. That is not what's meant here. **A heuristic rule is a procedure that gives a good enough answer fast, without promising the best one.** Not "the wrong way to compute," but a way with a different currency: feasibility instead of accuracy. For someone talking to a living person the optimal procedure is unavailable in principle — there's nothing to compute from and no time. So the question isn't "a heuristic or a proper method," but "which heuristic."
+
+*The second load is more dangerous.* "Everyone has their own heuristics" is one step from "everyone has their own truth," and that is precisely the opponent on the left. So I set the limiter immediately: **a heuristic is a definite procedure with a definite output, not a position and not an opinion.** Give two people the same input — they'll produce different answers, and that is a fact about how the procedures are built, not about there being two truths. What's more, procedures are **comparable**: take two and see which predicts the partner's behavior more accurately on the same data. For "one's own truth" no such measurement exists by construction. Heuristics, contrary to the colloquial reading, are not a variety of relativism but its opposite: they can be tested and they can lose.
+
+**Why this layer is needed — it closes a hole the rest of the text would otherwise leave.**
+
+Further on I'll be arguing that the channel between two people loses information by construction. But from loss on a single transmission it **does not follow** that there's no convergence under repeated exchange. A noisy channel used repeatedly still transmits — all of communications rests on that. So an attentive reader will ask: fine, one reply loses something, but a hundred conversations?
+
+Different procedures answer that. Two people applying different update rules **do not converge even under unlimited exchange**: they are computing different fixed points, and there is simply nothing to converge to. This isn't about loss in the channel — it's about the absence of a common limit.
+
+**And here the layer has a formal support, and it's a theorem.**
+
+**\[textbook\]**
+
+A dynamic is called **uncoupled** if each player's adjustment rule does not depend on the payoff functions of the others — that is, the player works only with his own. It has been proved: **no uncoupled dynamic guaranteed to converge to equilibrium exists.** Not even when the equilibrium is unique.
+
+The chain from there to my thesis is short. If each has his own set of rules, formed from his own experience and his own payoffs, the joint dynamic is uncoupled by definition. And for uncoupled dynamics there is no guarantee.
+
+**Three caveats, without which this would be overselling.**
+
+The theorem speaks about **guarantees**, not about every case: for any proposed uncoupled dynamic there exists a game where convergence fails. That does not mean two people never converge.
+
+"Uncoupledness" is about **information**, not about heterogeneity: what's constrained is what the player sees, whereas my thesis is about what he uses. The implication runs one way — one's own rules entail uncoupledness, not the reverse.
+
+And the theorem's target is **equilibrium**, while mine is coincidence of frames. These are different targets, and the step between them is mine, not the authors'.
+
+**One more result, closer to the point.** The known convergence theorems in the theory of learning in games — for fictitious play, for individual reinforcement learning — are proved under the condition that **all participants follow the same dynamic with the same parameters**. Homogeneity is not a detail of the proofs but their premise. Heterogeneity breaks precisely the guarantees.
+
+**A counterweight, again my own.** In particular cases convergence under heterogeneous rules has been **recovered** — but in narrow classes: two-person zero-sum games, under an additional condition. Heterogeneity is not always fatal, and I won't claim it is.
+
+**And the empirical record — heterogeneity of rules in people has been measured.** In laboratory games, learning parameters were estimated **for each participant separately**, and the spread turned out to be substantial: some players are described by a rule with long memory, some with short, some in between. But something else matters more, and I want to say this sentence separately: **models describing everyone by one averaged rule fit noticeably worse and sometimes lead to incorrect inferences.** A homogeneous description isn't merely less accurate. It misleads.
+
+**And this layer has its own signature in the data — not "asymmetry in general" but asymmetry of a definite shape.**
+
+Suppose two people combine partial impressions with different operations: one takes the minimum, the other the product. The coincidence on a single link is the same for both. Here's what happens with depth:
+
+| coincidence per link | depth 1 | depth 2 | depth 3 |
+|---|---|---|---|
+| 0.9 | 0.900 / 0.900 → **0** | 0.900 / 0.810 → 0.090 | 0.900 / 0.729 → 0.171 |
+| 0.8 | 0.800 / 0.800 → **0** | 0.800 / 0.640 → 0.160 | 0.800 / 0.512 → 0.288 |
+| 0.7 | 0.700 / 0.700 → **0** | 0.700 / 0.490 → 0.210 | 0.700 / 0.343 → 0.357 |
+
+Read the third figure in each pair — that's the skew. **At the first step it is exactly zero for any operations**, and after that it diverges. And this is what distinguishes my case from the two neighboring explanations: if both use the same operation, there's no skew at any depth; if one is simply more attentive than the other, the skew is there **already at the first step**. Neither gives zero at depth one and growth at depth two.
+
+**A caveat that spoils the elegance and is therefore obligatory.** The fifth part will show that people almost never build chains deeper than the second step. So the third column of the table describes a region the measurement can't reach, and all the discriminating work falls on the **contrast of two points: depth one against depth two**. At the first the skew must be zero, at the second nonzero. That's enough, but there's no margin. And note where the working quantity sits: at a coincidence of 0.9 the depth-two skew equals 0.090 and will drown in noise; at 0.7 it equals 0.210 and is distinguishable. Pairs with middling mutual understanding should be measured, not high.
+
+**And a rule I impose on myself so this layer doesn't sprawl.**
+
+The claim "everyone has their own set of rules" has a dangerous property: infinitely many mechanisms can be brought under it. So much has been written about how exactly people cut corners that, if I wanted, I could add a new mechanism in every paragraph and create the impression of mounting evidence.
+
+Therefore: **in this text there are exactly four mechanisms, and all four are measured.** Unpacking — because of it, plausibilities don't add to one. Projection — the picture of another's view is built from one's self-image. The anchor of one's own experience — one's own transparency is overestimated. Truncation — recursion depth of one or two steps. There will be no fifth.
+
+Not because there aren't others, but because a mechanism without a measurement procedure is not evidence but decoration. Four with numbers weigh more than twenty with names.
+
+**What the word "heuristic" is not doing here.** It carries no weight in the inference. The theorem on uncoupled dynamics says nothing about heuristics — it is about any adjustment rules, heuristic or impeccably rational. All that matters is that the player works with his own. The layer would stand even if people were perfect calculators — as long as they were different ones. "Heuristic" describes what the rules are like in fact; it is not a premise.
+
+------------------------------------------------------------------------
+
+## 5. Why the Chain of Expectations Doesn't Converge
+
+**\[textbook\]**
+
+The most technical part of the text, and to my mind the strongest.
+
+Mutual recognition is built as a chain. My model of you. Your model of my model. My model of your model of my model. Intuition suggests that if you go deep enough along that chain you get common knowledge — the state where both know, and both know that both know, and so on to the end.
+
+**The intuition is wrong, and that has been proved.**
+
+There's a game devised precisely to test this thought. Two people coordinate; messages get through; each is confirmed by a reply. After exchanging an arbitrarily large **finite** number of confirmations, all statements of the form "I know that you know that I know… that the game is such-and-such" are true. And nevertheless the situation remains **substantially different** from common knowledge: strategic predictions change **discontinuously** in the passage from common knowledge to almost common knowledge.
+
+Think about the word "discontinuously." It isn't that accuracy falls smoothly with depth and at some rung becomes insufficient. It's that **the limit is not reached by any finite number of steps**. Between "almost common knowledge" and common knowledge there is not a distance that can be shortened, but a break.
+
+**The apparatus of the fourth essay explains why.**
+
+Coincidence along a chain is combined by an operation, and in fuzzy logic such operations are called t-norms. The property that works here: `μ` at depth `n` is bounded by the convolution over the links, while common knowledge requires `μ = 1` **at every** depth.
+
+Then the interesting part begins, and it did not come out the way I expected.
+
+> **Math inset 3. Decay by depth — and why the question is empirical.** \[textbook\] Let the coincidence on one link equal `L`. Under composition by **minimum** the chain doesn't decay at all: `min(L, L) = L` at any depth. Under the **product** it decays: `L²`, `L³`. Under the Łukasiewicz operation `max(0, a+b−1)` fastest of all, down to zero. The numbers at `L = 0.9` and depth three: minimum 0.900, product 0.729, Łukasiewicz 0.700. **The minimum is not one of the family's operations but its upper bound**, and so under it depth costs nothing. Now the second axis, more important than the first: the spread between operations depends strongly on `L`. At depth three it is 0.10 at `L = 0.95` — inside the noise of almost any real measurement — and 0.60 at `L = 0.7`, comfortably distinguishable. Hence a non-obvious consequence for testing: **pairs with middling mutual understanding should be measured, not well-attuned ones.** Intuition says take the pairs that understand each other well — and that leads into a dead end: the better they understand each other, the smaller the chance of telling the mechanisms apart.
+
+The temptation was to say "the chain decays" and leave it there. That would have been untrue: under the minimum it doesn't.
+
+**And here's what comes out of it, and it's better than the convenient conclusion.** The fourth essay established that the choice of operation is an **empirical question, not a matter of taste**. So this isn't rhetoric but a live question with an answer in data: by which operation is mutual modeling combined? And the discontinuity from the confirmation game works as **evidence against the minimum** for this domain: if composition went by the minimum, the depth of the chain would spoil nothing, and it does spoil.
+
+That is, the fifth essay gets not a borrowed conclusion but its own claim about how the operation is built — and a refutable one.
+
+**Now the second mechanism, and it must not be confused with the first.**
+
+Everything said so far is about **decay**: the chain gets built, but the links get convolved. There is a second cause, of an entirely different nature. **Truncation**: people simply don't build long chains.
+
+The classic test is a guessing game. Name a number from zero to a hundred; the winner is whoever comes closest to two thirds of the average. The equilibrium here is zero, and it's reached by an infinite chain: "if everyone is rational, nobody will name more than 66, so I won't name more than 44, so…". People on average name numbers between twenty and thirty-five. That is **one or two steps** of reasoning. Almost nobody goes further.
+
+**The mechanisms produce the same observable effect but different predictions.** Decay says: make a person think deeper — accuracy will still fall. Truncation says: make him, and it will improve, because the depth wasn't built not from the apparatus failing but from unwillingness to compute. Telling them apart is a separate good problem, and I won't pretend it's solved.
+
+**And an unpleasant consequence for me.** If chains deeper than the second or third step aren't built in reality, then any elegant computation at depth ten describes an **unreachable region**. Striking and untestable. So I carry all the weight on depths two and three, and leave the far rungs as an illustration of the asymptotics.
+
+------------------------------------------------------------------------
+
+## 6. The Chaotic Side: Co-adaptation
+
+**\[textbook\]**
+
+So far the talk has been about statics: frames are blurred, the chain doesn't converge. Now the second nature of imprecision, and it is about time.
+
+Two people, talking, adjust to each other. Each changes his behavior in response to changes in the other, and does so continuously. Such a pair is a **coupled dynamical system**, and the question of what happens to it next has a rigorous answer.
+
+The answer is unpleasant. In the simplest two-person game where both adjust the frequencies of their moves by reinforcement — rock-paper-scissors, nothing more complicated — the learning **does not converge to equilibrium but becomes chaotic**. This is not a metaphor and not a transfer from a neighboring field: it is a result in pure dynamics on pure game theory.
+
+Worth pausing here. In the fourth essay I spoke about chaos with respect to a single person — and honestly admitted it was a transfer from the first essay, without evidence of its own. **Here the evidence is its own, and it is precisely about two.** The dynamical side stops being borrowed.
+
+> **Math inset 4. The horizon of joint predictability.** \[textbook\] In a chaotic system a small divergence `δ₀` grows roughly as `|δ(t)| ≈ |δ₀| · e^(λt)`, where `λ` is the Lyapunov exponent. A forecast stops making sense when the divergence reaches an acceptable `Δ`. Hence the horizon: `t_hor ≈ (1/λ) · ln(Δ / |δ₀|)`, where `δ₀` is the imprecision of your initial model of the partner. The logarithm comes out in one line by inverting the exponential, and it is the main thing here. **The dependence of the horizon on precision is logarithmic.** Refine your model of your partner a millionfold — the horizon grows fourfold. To double the horizon you must square the precision. And `λ` for a pair is certainly larger than for one person: the system is coupled, divergences feed each other. So the horizon is shorter than in the fourth essay, and the returns from getting to know your partner fall off faster still.
+
+**A link to the previous part that should be made explicit.** Chaos here arises in the co-adaptation of two **learners**. The third layer adds that they learn **by different rules**. So the coupled system is heterogeneous by construction — precisely the case for which convergence guarantees have not been proved. The two parts support each other: the sixth shows that even under identical rules the dynamics can turn chaotic; the fourth adds that the rules also differ.
+
+**And an obligatory reminder, so as not to commit the error the second part warns against.** What's at issue here is a **different** kind of imprecision than in the third part. There, frames are blurred statically — the question "are we playing the same game" has no two-valued answer. Here, trajectories diverge dynamically — the rules may be as sharp as you like, and prediction is still impossible beyond the horizon. Two kinds of imprecision, two different apparatuses. Folding them into one is that same invitation to pin me to the wall that I've been carefully avoiding since the first essay.
+
+------------------------------------------------------------------------
+
+## 7. The Main Move: The Channel Is Lossy by Construction
+
+**\[framework\]**
+
+Now the main claim of the text.
+
+The fourth essay ended with a practical conclusion: **defuzzify as late as possible.** Hold the answer about yourself in fuzzy form until the last step, collapse it into a single number only at the moment of action, because the collapse is irreversible — from the number you cannot recover the function that produced it.
+
+**In the two-sided case that conclusion is unfulfillable by the construction of the task.** And everything else follows from this.
+
+In an interaction you are obliged to act, and an action is single-valued. You cannot answer your interlocutor with a distribution. You cannot fall silent "at 0.6." Every move of yours — a reply, an intonation, a pause — is **a collapse of your inner state performed at the earliest possible moment**. Not "as late as possible," but immediately, because the game demands a move.
+
+And the other person observes **only the result of that collapse**. He sees your reply, not the distribution of states it came from. And he builds his model of you from it.
+
+> **Math inset 5. Why recovery is impossible.** \[textbook\] The collapse of a fuzzy state into a single number is done, for instance, by the center of gravity: `x* = ∫ x·μ(x) dx / ∫ μ(x) dx`. Look at this as a mapping `μ ↦ x*`: it sends an entire function to one number and is therefore **not injective**. A narrow peak at five, and two distant humps symmetric about five, both give `x* = 5`. So recovering `μ` from `x*` is **impossible** — not "difficult," impossible, and it follows directly from non-injectivity. The loss of information here is **proved, not asserted**. In the third essay it was called structural loss under compression; now it has a formula.
+
+**The formulation of the main move.**
+
+The two-sided procedure of getting to know each other does not converge **not because there's too little data**, and not because the participants are insincere, and not because someone isn't trying hard enough.
+
+It doesn't converge because **the channel between two intelligences is lossy by construction, in both directions**, and the loss is provable. Each sees only the other's collapses and builds from them a model that demonstrably does not recover the original. This is a direct continuation of the third essay, where the loss under compression was named, and of the fourth, where it acquired a formula. The fifth shows that **in a pair this loss becomes obligatory and mutual.**
+
+**And now the thing without which the main move is unfinished.**
+
+A lossy channel is not yet a catastrophe. Engineers work with lossy channels every day: they add a check, notice the error, ask again, repeat. The error is damped by feedback.
+
+Here it isn't damped. And here is why.
+
+**\[textbook\]**
+
+On one side, people systematically **overestimate how much their inner states leak outward**. A liar overestimates how visible his lie is. Someone feeling something strongly overestimates how visible it is. The mechanism is known: a person cannot fully discount his own experience when trying to take another's point of view — and rates his own transparency higher than it is.
+
+On the other side, what was already said in the third part: the receiver, trying to understand how he is seen, **fills in the missing part from his own self-image**.
+
+Add the two halves. **The sender believes he transmitted more than he did. The receiver believes he received — while in fact he substituted himself.**
+
+**The formulation this part was written for: the channel is not only lossy, it displays no indicator of loss.**
+
+The error isn't damped because neither side suspects its size. Both leave the conversation with a sense that they understood each other — and that sense is unconnected to whether they did. That is why the two-sided procedure doesn't converge while the participants don't notice and see no need to fix anything.
+
+Here it also becomes clear how **understanding** differs from **computation**. An equilibrium can be computed in a given game. Here the game isn't given, the channel loses, there's no indicator. So understanding is not a result achieved at the end of a procedure but **a change of the procedure itself along the way**: having discovered a divergence of frames, you don't play the previous game more accurately, you start another one. That, and not computation, is what happens in the conversations that work.
+
+------------------------------------------------------------------------
+
+## 8. The Inoculation, and It's Harder Than in the Fourth Essay
+
+Time to lay out the main charge against myself. As last time, I do it myself and first.
+
+The class of methods I rely on — soft operational research and the soft game theory that grew out of it — **is accused of not producing testable results.** And that accusation is not the invention of enemies.
+
+It was formulated by a **defender** of these methods, in the leading European journal of operational research. The paper is titled accordingly: problem structuring methods **"in the dock."** The author examines why in forty years these methods still haven't been accepted into the mainstream of the discipline, and names two stumbling blocks. The first strikes directly at me: **the subjective nature of the modelling yields insights rather than testable results.**
+
+This is exactly what the opponent on the left will hit me with. And it comes not from a hostile outsider but from someone defending the field — such a source cannot be waved off.
+
+**My answer is not "but it's useful." My answer is that the load-bearing claims of this text are taken from elsewhere.**
+
+Look at what the construction stands on.
+
+The impossibility of guaranteed convergence under uncoupled dynamics is a **theorem**, not an insight. It can be refuted: exhibit an uncoupled dynamic that converges to equilibrium in all games.
+
+The discontinuity of the passage from almost common knowledge to common knowledge is a **theorem**. Refuted by exhibiting a continuous passage.
+
+The non-injectivity of the collapse is a **one-line fact**. Refuted by exhibiting an inverse mapping.
+
+Chaos in learning the simplest two-person game is a **computed result**. Refuted by a computation showing convergence.
+
+Heterogeneity of learning rules across people is a **measurement**, with parameters estimated for each participant. Refuted by a measurement in which the spread is absent.
+
+None of these five claims is an insight, and each can be lost.
+
+**Soft operational research gives me a language and a statement of the problem, not proofs.** Hypergames and soft game theory name the situation — "the structure isn't given" — and that is valuable, because without a name there is nothing to grasp it by. But the weight is carried by theorems taken elsewhere. The formulation I reduce this to is the same in construction as in the fourth essay: **what I take from the soft methods is not their track record but their statement of the question — and I answer it by means that can turn out to be wrong in a testable way.**
+
+**And a boundary, so as not to overstate in the other direction.** Admitting the charge doesn't mean the soft methods are useless. It means exactly one thing: **you cannot rest a conclusion on them.** If tomorrow it turns out that the entire programme of soft operational research is methodologically unsound, the five claims above will not suffer by a single word. That is the test of where the construction actually stands.
+
+------------------------------------------------------------------------
+
+## 9. Hypothesis 8 and How to Kill It
+
+**\[hypothesis\]**
+
+The series numbers its hypotheses continuously: the first essay advanced the first, second and third, the second the fourth and fifth, the third the sixth in two variants, the fourth the seventh. This is the eighth.
+
+As last time, I take the **soft variant**: the accompanying predictions stand beside the hypothesis, not inside it. The justification and the price come after the death conditions.
+
+> **Hypothesis 8.** On interactions where the number of plausible frames is greater than two, a representation of frames **without normalization** yields a reproducible predictive advantage over a Bayesian model with a normalized prior on the same data. The composition of mutual models by depth is meanwhile **strict**: the degree of coincidence falls with the depth of recursion rather than staying constant.
+
+> **Accompanying prediction (a).** The skew of understanding within a pair is measurable and asymmetric: `μ(A→B) ≠ μ(B→A)` stably, not within noise.
+>
+> **Accompanying prediction (b).** The horizon of joint predictability grows logarithmically with the precision of the initial model of the partner — that is, getting to know your partner yields sharply diminishing returns.
+>
+> **Accompanying prediction (c).** The composition operation differs between people. The observable consequence is a **contrast of two points, not a curve**: the skew equals zero at the first depth of recursion and is nonzero at the second. The testable quantity is named in advance so that nothing is fitted afterwards: it is the **difference of skews between the first and second depth**, not the shape of a curve and not the bare fact of asymmetry. On two points a curve does not exist, and promising one would be promising the unfeasible.
+>
+> None of the three **belongs to the hypothesis**, and their failure is not its refutation. The separation is fixed here, **before any measurement**.
+
+**How to kill it.** There are five conditions, but they strike different storeys of the construction, and folding them into one list would be dishonest accounting. I'll separate them by tier.
+
+**Tier one: these kill the core. Any one of the two suffices.**
+
+**Predictive.** If on fan-shaped interactions, where there are three frames or more, a Bayesian model with a normalized prior predicts no worse than the unnormalized representation — the hypothesis is dead, and the special apparatus is superfluous. The domain is stipulated deliberately: in the degenerate case of two frames normalization does hold for people, the Bayesian camp is right there, and I admit it in part 2 before any argument.
+
+**Compositional.** If the degree of coincidence of frames does not fall with the depth of recursion — that is, if composition goes by the minimum — the second half of the hypothesis is dead, and the discontinuity from the confirmation game requires another explanation.
+
+**Tier two: these kill instrumentality but not the claim about the world.** A thesis can remain true and still turn out to be useless — these are different defeats, and they must not be conflated.
+
+**Operational, for the first person.** If knowing that the frame doesn't coincide changes not a single one of your actions in a real interaction — this is a description, not an instrument. As a basis the thesis is dead regardless of statistics; as a claim about what happens between two people it doesn't thereby become false. The condition carries over from the fourth essay word for word and for the same reason.
+
+**Operational for the third layer.** If knowing that your partner uses a different set of rules changes not a single one of your actions — the third layer is descriptive rather than instrumental, and as a basis it is dead regardless of whether the rules differ.
+
+**Tier three: this knocks out the motivation and leaves the core.**
+
+**Descriptive, auxiliary.** If the sums of plausibility over frames converge to one even with three alternatives — the plausibility argument on which the motivation rests collapses. The core will survive: the question "do people's beliefs normalize" and the question "does the unnormalized model win on data" are different, and I separate them below. But the support will vanish, and it will have to be looked for anew.
+
+**The tally, so as not to inflate it.** Two conditions fell the core. Two more strike at instrumentality, one at the motivation. Five items, three different kinds of defeat; saying "any one of five suffices" would pass one off as another.
+
+**And the selection condition, without which the test is doomed before data collection begins.** The compositional condition and prediction (c) are measured on pairs with **middling** mutual understanding — with a degree of coincidence around 0.7 — and not on well-attuned ones. The reason is in the fifth part, and one has to be careful with the quantities here, because there are two of them and they live at different depths. The spread between operations at depth three is one tenth at a coincidence of 0.95 and six tenths at 0.7 — that is an illustration of scale. But the working quantity is the skew at depth two, because the measurement doesn't reach deeper: at a coincidence of 0.7 it equals 0.210, at 0.9 it falls to 0.090. Intuition says take the pairs that understand each other well, because things are "cleaner" there. Here it leads into a dead end, and the selection criterion has to be fixed in advance, together with the primary outcome, not chosen along the way.
+
+**What failure of the accompanying predictions means.**
+
+Failure of (a) — the asymmetry turned out to be an artifact of measurement; the link to hypergames tears, the core doesn't. Failure of (b) — the returns from getting to know a partner don't diminish; the main argument against the precision camp crumbles, the core stands. Failure of (c) — everyone composes identically; the third layer collapses back into a hypergame, the fourth part has to be cut, and the breach about repeated exchange reopens. The last damage is larger than the other two, which is why the prediction is named explicitly.
+
+**Now about the soft variant and its price — following the fourth essay.**
+
+Two different virtues collide. **Refutability** says: the easier to kill, the more honest; pull everything inside, and any miss brings the construction down. **Antifragility** says otherwise: what matters is not only dying from a blow but becoming more precise from a blow that didn't kill. The hard variant gives only two outcomes — "all correct" or "all dead" — and gains nothing from partial refutation. The soft variant extracts knowledge from the very same measurement.
+
+**I admit the price directly: this way the hypothesis is harder to kill.** By the series' own criterion that is a minus.
+
+It is offset by three things, all obligatory. The predictions are **not deleted but moved out** — they are formulated, testable, and will get their verdict. The separation is **fixed in advance**, before any measurement, and recorded in a public repository with dates. Each failure has **its own damage named**, and named above.
+
+**And a distinction that protects the hypothesis from what you've already read.** In part 2 I said myself that with two frames normalization holds. So the question comes at once: are you advancing a hypothesis half of which you gave away seven parts earlier?
+
+I'll answer before the question. **These are three different questions.** Do beliefs normalize — a question about people, the answer is in two parts, and I gave it. Does the unnormalized representation yield an advantage — a question of comparing two models on data, and this is the core of the hypothesis. Does the composition operation differ between people — a third question, and it is placed in accompanying prediction (c). The second doesn't follow from the first: a person may compute sloppily while a model that credits him with accuracy still predicts no worse. Exactly the same gap that in the fourth essay lay between "there is no boundary" and "the fuzzy representation wins."
+
+------------------------------------------------------------------------
+
+## 10. How This Connects to the Whole Series
+
+**\[framework\]**
+
+Time to assemble the line, because this is the fifth text and without assembly its place is unclear.
+
+**The first and second essays** proved that you cannot finish reading another person, in two independent ways: the description doesn't converge; the label predicts not the person but whoever hung it. Both cases are **one-sided**: there is an observer, there is an object, and the question is what the observer can learn.
+
+**The third** honestly admitted that it had opened not that lock but the one next door: the question "can I finish reading myself" turned out to be a different question.
+
+**The fourth** picked up that neighboring door and made it the main one, and along the way supplied instruments for both: partial membership, a distribution instead of a point, the proved price of the collapse.
+
+**The fifth goes to the two-sided case.** Here both build models of each other at once, and this is not a doubling of the one-sided problem but a different problem. In the one-sided case the object is at least motionless relative to the procedure. Here it builds a counter-model, acts on it, and thereby changes what you observe.
+
+From this you can see how this text **differs** from the first two, rather than merely continuing them. There, non-convergence was explained by the construction of the object: a person is too complex, too changeable, too dependent on conditions. Here it is explained by **the construction of the channel and the difference of procedures** — and both explanations would work even with a simple, unchanging object. Two simple automata with different update rules will not converge for exactly the same reason two people won't.
+
+This is perhaps the most unexpected conclusion of the series. **The impossibility of finishing reading another does not require the other to be complex. It is enough that he be separate.**
+
+**And about this text's place in the queue.** The fourth essay said the full stop is put by the next one, and the next one is this. And it does put it: the line "you cannot finish reading" has been carried from the one-sided case to the two-sided one, and the instruments for working with the unreadable were described in the previous text. What comes after is a separate question, and I'll promise nothing.
+
+------------------------------------------------------------------------
+
+## 11. Objections
+
+Prepared in advance, not after the draft.
+
+**"This is an ordinary Bayesian game, you're overcomplicating."** On the two-frame stretch — yes, and I said so myself in part 2, before the objection. Beyond that, no, and the difference is checkable by addition: if plausibilities of frames don't normalize with three or more alternatives, the Bayesian construction describes something other than what is happening. The objection isn't parried by rhetoric; it's converted into a criterion.
+
+**"Hypergames and soft game theory are a marginal tradition."** The corpus is indeed small, and I admit it. But notice what the text stands on: **three unconnected literatures** arrive independently at the same conclusion. The study of probability judgment says degrees of belief don't normalize. Interpersonal perception says the picture of another's view is built from oneself, not from feedback. Behavioral game theory says the depth of recursion is one or two steps, not infinity. None of the three knows about hypergames or has any stake in my thesis. The convergence of three independent traditions weighs more than the size of any one corpus.
+
+**"You've stretched fuzzy logic over game theory."** Check that with a claim that can be refuted: the composition operation for mutual models is fitted from data, and the question of which one has an answer in a measurement. If it's a stretch, the measurement will show it.
+
+**"Soft here and soft in the fourth essay are the same word, so the same business."** No, and I separated that in part 2: different traditions, an accidental coincidence of term.
+
+**"You've stretched laboratory effects obtained on students in artificial tasks over live interaction."** A fair objection, and I lay it out myself. The answer follows the fourth essay: these results are taken as **evidence that a mechanism exists**, not as a measurement of its magnitude in anyone's particular life. That people truncate recursion at the second step in a game with numbers doesn't mean they truncate it at exactly the second step in a conversation with their wife. It means only that the depth is finite and small, and that is all I need.
+
+**And the self-criticism better spoken by me.** It is heavier here than in the fourth essay, and I won't soften it.
+
+**Again there is no measurement of my own.** Not one. All the numbers in the text are other people's, and almost all were obtained on a different task from the one I'm describing: subadditivity was measured on judgments about the probability of events, not about game frames; projection on impressions, not on models of another's game; truncation on a game with numbers, not on a conversation. I flagged every transfer, but a flag doesn't cancel the fact that there are many of them.
+
+**And again the structure of the hypothesis was chosen to be durable.** Three predictions moved outside; their failure doesn't fell the core. From the outside it looks like this: a man advanced a claim, arranged in advance that most of the construction couldn't count as its refutation, and measured nothing.
+
+I assemble that chain first, because a reader will assemble it himself. What I can say against it: the separation was fixed **before** the measurement, not after a failed one, and it lies in a public repository with dates. Each failure has damage named in advance. Two conditions fell the core — the same number as in the fourth essay — and beyond them there are three more, striking at instrumentality and at motivation, each with its own named damage. I won't boast about the number five: these are different kinds of defeat, and heaping them together for a pretty figure would be doing exactly what I'm being accused of.
+
+But this is weaker than a conducted experiment, and I don't want one taken for the other.
+
+------------------------------------------------------------------------
+
+## 12. The Return
+
+Let's go back to the phrase "why did you write this."
+
+Now it's clear why it caught me and why I remembered it. It **lands perfectly in both games at once** — and that is precisely why it doesn't distinguish them. In my game it's a question about the intent of a text, and I had a ready answer. In his game it's a question about who I'm standing with, and to that I had no answer, because I didn't know it had been asked.
+
+Such a phrase is the worst possible signal: it passes through the channel undistorted and reads as meaningful in both frames. The smoothness of the conversation was produced not by understanding but by the replies fitting together grammatically. **A coincidence of forms under a divergence of frames.**
+
+That note — "why did you write this" — is still on my fridge.
+
+Now it has a name. More than one.
+
+We were playing different games. I was in the game "what is going on," he in the game "who are you after this." The degree of coincidence of frames `μ` was somewhere in the middle: not zero and not one — which is why the conversation ran smoothly. Each of us saw only the other's **collapse** — a reply, not a state — and filled in the rest from himself: I from my thoroughness, he from his optics of loyalty. The skew `μ(me→him) ≠ μ(him→me)` was there. A signal about the skew was not.
+
+And the nod "got it" is the case where an indicator exists but shows the wrong thing: it confirms receipt of a signal, not coincidence of a frame.
+
+**The channel was lossy without an indicator of loss.** That is the whole explanation, and there isn't a single word in it about either of us listening badly.
+
+And here is what follows practically — not consolation, but three concrete things.
+
+**First: stop treating mutual understanding as a state that gets achieved.** It doesn't get achieved, because there's nothing to converge to: two people have different rules and different fixed points. Understanding is not a result but work that goes on while the conversation goes on, and stops with it.
+
+**Second: know the price of your own move.** Every time you answer, you collapse your state into a single reply — and what got collapsed does not unfold again. Not because your interlocutor is inattentive. Because the inverse mapping does not exist.
+
+**Third, and it's why I kept the note: the check has to be done by hand.** Since there is no indicator by construction, a procedure takes its place. Say out loud what game you're in. Ask what game the other is in. Not sense it — say it and hear the answer.
+
+And here I should forestall an objection that assembles itself out of part 7: a spoken sentence about the frame is also a collapse, travelling down the same lossy channel as everything else. True. The check doesn't restore the channel and doesn't cancel the loss — it does something else.
+
+An ordinary reply hides the divergence: you answer on the merits, your interlocutor answers on the merits, everything fits, and there's no signal. A reply about the frame forces the partner to answer with a claim about the frame in turn — and there the two answers either match or diverge visibly. The loss remains. What changes is observability: the divergence goes from invisible to visible.
+
+So the manual check doesn't repair the construction. **It creates an indicator the construction doesn't have.**
+
+It's cheap. And almost nobody does it — because the sense that you've understood each other anyway is produced by filling in from yourself, and is therefore equally strong whether you're right or wrong.
+
+The first essay claimed you cannot finish reading a person. The fourth added that you can nevertheless work with him honestly. The fifth says a third thing, and it's the hardest to accept: **when there are two of you, the unreadness is mutual and simultaneous.** You fail to finish reading him at the very moment he fails to finish reading you, and to both of you it seems that everything is fine.
+
+It doesn't follow that talking is pointless. Exactly the opposite follows: **since there is no signal, it has to be sent by hand.**
+
+That is harder than understanding each other from half a word. But from half a word people understand not each other — themselves.
+
+------------------------------------------------------------------------
+
+## Formulas
+
+The whole essay in the language of formulas — part by part. There are four carrying symbols: `μ(frame_A ≈ frame_B) ∈ [0,1]` — the degree to which two players' frames coincide; `T` — the composition operation by which a player combines partial impressions; `λ` — the Lyapunov exponent of the coupled pair; `h` — a player's rule set, the mapping "observation → update → action." Layer tags (\[textbook\] / \[framework\] / \[hypothesis\]) are preserved.
+
+**1. The Thesis** · \[framework\]
+
+- `the structure is unknown`, not `the payoffs are unknown` — The whole fork with the Bayesian game in one line. There the outcome of a draw is unknown within a given structure; here the structure isn't given.
+- `understanding = a change of game`, not `a solution of the game` — The main claim. Not computing an equilibrium in a given frame, but the convergence or divergence of the frame itself.
+
+**2. The Fork: Frame versus Payoffs** · \[textbook\]
+
+- `∑ᵢ p(typeᵢ) = 1` versus `∑ᵢ μ(frameᵢ)` — free — The arithmetical trace of the difference. In a Bayesian game belief lives on a simplex, the budget is fixed; a hypergame has no budget.
+- three different things: `∑ p = 1` an axiom · a human's violation of the axiom · the absence of the axiom for `μ` — Without this distinction the signature from the fourth essay is devalued: "the sum isn't one" will look like a mark of sloppiness, whereas for memberships it is the construction.
+- `n = 2` ⟹ normalization holds; `n ≥ 3` ⟹ it breaks, and the more so the larger `n` — The boundary of the claim, stated first. On two frames the Bayesian camp is right.
+
+**3. The Fuzzy Side: Frames Coincide by Degree** · \[textbook\] + \[framework\]
+
+- `μ_R(x,x) = 1`; `μ_R(x,z) ≥ T(μ_R(x,y), μ_R(y,z))` — Reflexivity and T-transitivity carry over from inset 6 of the fourth essay. \[textbook\]
+- `μ_R(x,y) = μ_R(y,x)` — **dropped** — Symmetry is lost: A can model B better than B models A. Instead of an equivalence, a directed relation, a fuzzy preorder. \[framework\]
+- `skew = μ(A→B) − μ(B→A)` — A measurable quantity in place of a literary observation. Operationalized by decomposition into actor, partner and relationship effects.
+
+**4. Different Rule Sets** · \[textbook\] + \[framework\]
+
+- `T_A ≠ T_B` — The formal body of the third layer: each combines impressions with his own operation. \[framework\]
+- `skew(depth 1) = 0` for any `T`; `skew(depth 2) > 0` when `T_A ≠ T_B` — The layer's signature in the data. Identical operations give zero at both points; different attentiveness gives a shift already at the first. \[framework\]
+- an uncoupled dynamic ⟹ **no guaranteed convergence to equilibrium exists** — A theorem. One's own rules from one's own experience entail uncoupledness, and the result follows. \[textbook\]
+- the known convergence theorems require `h_i = h_j` **and** identical parameters — Homogeneity is the premise of the proofs, not a detail. \[textbook\]
+- `h` is claimed, `T` is tested — An honest record of the narrowing: the layer is stated at the level of rules and tested at the level of one of their components.
+
+**5. The Chain of Expectations** · \[textbook\]
+
+- `T(a,b) ≤ min(a,b)` for any t-norm — The minimum is the family's upper bound, not one of its operations.
+- under `T = min` depth doesn't decay; under strict `T` it does — At link 0.9 and depth three: 0.900 against 0.729 and 0.700. The question of composition is empirical, not a matter of taste.
+- spread(link 0.95) = 0.10 versus spread(link 0.7) = 0.60 — Discriminability falls sixfold as mutual understanding rises. Middling pairs must be measured, not well-attuned ones.
+- common knowledge requires `μ = 1` at **every** depth; a finite number of steps yields a **break**, not an approach — The limit isn't reached by any finite number of confirmations. The discontinuity is load-bearing.
+- depth in reality `≈ 1–2` — Truncation. Anything computed at depth ten describes an unreachable region.
+
+**6. The Chaotic Side** · \[textbook\]
+
+- `|δ(t)| ≈ |δ₀| · e^(λt)` — Divergence in a coupled pair grows exponentially.
+- `t_hor ≈ (1/λ) · ln(Δ / |δ₀|)` — The horizon of joint predictability. The logarithm comes out by inverting the exponential in one line.
+- the dependence on precision is **logarithmic**; `λ`(pair) > `λ`(individual) — Refine your model of a partner a millionfold and gain fourfold. To double the horizon, square the precision. A pair's horizon is shorter than the individual's in the fourth essay.
+
+**7. The Main Move: The Lossy Channel** · \[framework\]
+
+- an action is single-valued ⟹ `collapse` is **immediate**, not "as late as possible" — The fourth essay's conclusion is unfulfillable in the two-sided case by the construction of the task.
+- `x* = ∫ x·μ(x) dx / ∫ μ(x) dx`; the mapping `μ ↦ x*` is **not injective** — The other sees only `x*`. Recovery of `μ` is impossible, and that follows from non-injectivity, not from a shortage of data. \[textbook\]
+- `estimate(transparency) > transparency` **and** `meta-perception ← self-image` — The sender believes he transmitted more; the receiver substitutes himself. Hence — **the channel displays no indicator of loss**, and the error isn't damped.
+
+**8. Hypothesis 8** · \[hypothesis\]
+
+- `H = C₀ ∧ K` — The core, and only it. `C₀` is the predictive advantage of the unnormalized representation on fan-shaped interactions; `K` is the strict decay of composition by depth. The claim is compound and both halves are load-bearing: killing either conjunct kills the whole.
+- `death(core) = ¬C₀ ∨ ¬K` — Two conditions, not five. As many members of the disjunction as there are conjuncts in the content — and not one more.
+- `¬(A ∧ B) = ¬A ∨ ¬B` — The rule by which the previous line is obtained. It justifies exactly as many members of the "or" as stand in the "and" of the content; it does not permit adding to the disjunction a condition that isn't in `H`.
+- `I = O₁ ∧ O₂`; `¬I ⟹ ¬basis(H)`, not `¬H` — The second tier: instrumentality. Operationality for frames and for rules is not part of the core. A thesis can remain true and still turn out useless — a different defeat, and writing it into the death of the core would inflate the tally.
+- `¬D ⟹ support(H) = ∅`, while `H` stands — The third tier: motivation. Failure of the descriptive condition knocks out the plausibility argument but not the core.
+- tally: 2 on the core, 2 on instrumentality, 1 on motivation — Five items, three kinds of defeat. Folding them into one disjunction is the dishonest accounting that part 9 refuses in plain text.
+
+**9. The Emblem: Separateness Instead of Complexity**
+
+- non-convergence ⟸ `a lossy channel` **and** `h_A ≠ h_B`, and **not** `complexity(object)` — The most unexpected conclusion of the text. Both mechanisms would work with simple, unchanging objects too.
+- **you cannot finish reading another not because he is complex, but because he is separate** — If the section is to have a closing formula, this is it. It also ties the fifth text to the first: there, non-convergence was explained by the construction of the object; here, by the construction of the channel between two.
+
+------------------------------------------------------------------------
+
+## Sources
+
+> **\[SOURCE REVIEW COMPLETE, DOUBLE-CHECKED.\]** The six positions of the game-theoretic backbone that had been blocking publication were verified against primary sources by the psychological reader and independently duplicated by the mathematical editor. Both corrections were confirmed: Howard published in *Information and Decision Technologies*, not in JORS; Reitman is 1964, not 1965. The duplication added the issue number for Howard, the DOI for Heifetz and colleagues, and page numbers for Reitman, and it explained the discrepancy in the manifesto's year — the text appeared in two journals. Positions taken on someone else's verification and one that surfaced in passing and remains unconfirmed are flagged separately.
+
+**Statement of the problem: ill-structured problems and soft operational research.**
+
+1. Simon, H. A. (1973). The structure of ill structured problems. *Artificial Intelligence*, 4(3–4), 181–201. DOI 10.1016/0004-3702(73)90011-8. — **double-checked.** The source of the notion; part 1. In passing: in his own abstract Simon writes that the boundary between well- and ill-structured problems is vague, shifting and resists formalization. The author of the notion declares its own boundary fuzzy — a direct bridge to the fourth essay, used in part 1.
+2. Reitman, W. R. (1964). Heuristic decision procedures, open constraints, and the structure of ill-defined problems. In: Shelly, M. W., & Bryan, G. L. (eds.), *Human Judgments and Optimality*, 282–315. New York: Wiley. — **double-checked**, pages and the composition of the volume confirmed independently. The year is settled: 1964, not 1965. The discrepancy came from the same author's separate book *Cognition and Thought* (Wiley, 1965) — a different work.
+3. Rosenhead, J., & Mingers, J. (eds.) (2001). *Rational Analysis for a Problematic World Revisited: Problem Structuring Methods for Complexity, Uncertainty and Conflict*, 2nd ed. Chichester: Wiley. — **double-checked.** The canonical compendium on problem structuring methods. First edition: Rosenhead, J. (ed.) (1989), *Rational Analysis for a Problematic World*, Wiley — without Mingers.
+4. Ackermann, F. (2012). Problem structuring methods 'in the dock': arguing the case for soft OR. *European Journal of Operational Research*, 219(3), 652–658. DOI 10.1016/j.ejor.2011.11.014. — **verified.** An examination of the case of Soft OR written by a defender of the field; the first stumbling block named is that the subjective nature of the modelling yields insights rather than testable results. Part 8, load-bearing for the inoculation.
+
+**Hypergames and soft game theory.**
+
+5. Bennett, P. G. (1980). Hypergames: developing a model of conflict. *Futures*, 12(6), 489–507. — **double-checked.** Each player is rational within his own, possibly wrong, model of the other's game; part 3. A pagination variant "487–507" occurs in a minority of sources; 489–507 adopted. The origin point of the notion is earlier: Bennett, P. (1977). Toward a theory of hypergames. *Omega*, 5(6), 749–751.
+6. Howard, N. (1990). "Soft" Game Theory. *Information and Decision Technologies*, 16(3), 215–227. — **double-checked, the correction confirmed**: the paper appeared not in JORS, as the earlier version of this list had it, but in *Information and Decision Technologies*; the duplication also pinned down the issue number. Frames change in the course of interaction; part 7.
+7. Howard, N., Bennett, P., Bryant, J., & Bradley, M. Manifesto for a theory of drama and irrational choice. — **verified with a caveat**: there are four authors, not "Howard et al." without a roster, and the year differs across sources. The cause is not a citation error: the text appeared **twice** — in the *Journal of the Operational Research Society*, 44, 99–103, and in *Systemic Practice and Action Research*, 6, 429–434. Hence both dates.
+8. Howard, N. (1994). Drama theory and its relation to game theory. Parts 1 and 2. *Group Decision and Negotiation*, 3(2), 187–206 and 207–235. — **verified.** The canonical full exposition of drama theory; the manifesto ranks below it.
+9. Heifetz, A., Meier, M., & Schipper, B. C. (2006). Interactive unawareness. *Journal of Economic Theory*, 130(1), 78–94. DOI 10.1016/j.jet.2005.02.007. — **double-checked**, the DOI added during duplication. The canonical source on games with unawareness. Notable criticism worth knowing by the discipline of the series: Halpern, J. Y., & Rêgo, L. C. (2008). Interactive unawareness revisited. *Games and Economic Behavior*, 62(1), 232–262.
+
+**The rigorous results the construction stands on.**
+
+10. Hart, S., & Mas-Colell, A. (2003). Uncoupled dynamics do not lead to Nash equilibrium. *American Economic Review*, 93(5), 1830–1836. — **verified.** A dynamic is uncoupled if a player's adjustment rule does not depend on the payoff functions of the others; no uncoupled dynamic guaranteed to converge to equilibrium exists, even when the equilibrium is unique. Part 4, load-bearing.
+11. Rubinstein, A. (1989). The Electronic Mail Game: Strategic Behavior under "Almost Common Knowledge". *American Economic Review*, 79(3), 385–391. — **verified.** An arbitrarily large finite number of statements "i knows that j knows…" is not equivalent to common knowledge; strategic predictions change **discontinuously** in the passage from common knowledge to almost common knowledge. Part 5, load-bearing.
+12. Sato, Y., Akiyama, E., & Farmer, J. D. (2002). Chaos in learning a simple two-person game. *PNAS*, 99(7), 4748–4751. — **verified.** Two players adjust move frequencies by reinforcement; in the zero-sum game the learning yields Hamiltonian chaos. Part 6; it closes the dynamical side on its own territory.
+13. Fudenberg, D., & Levine, D. K. (1998). *The Theory of Learning in Games.* MIT Press. — **verified.** The canonical compendium: equilibrium as the long-run outcome of adjustment by less than fully rational players, rather than as an initial assumption. The general frame of parts 4 and 5.
+
+**Heterogeneity of learning rules.**
+
+14. Cheung, Y.-W., & Friedman, D. (1997). Individual learning in normal form games: Some laboratory results. *Games and Economic Behavior*, 19, 46–76. — **verified, load-bearing evidence.** Parameters are estimated for each participant; heterogeneity across players is considerable — some are described by a long-memory rule, some by a short-memory one, some in between. And the main point: **representative-agent versions fit significantly less well and sometimes point to incorrect inferences.**
+15. Camerer, C. F., & Ho, T.-H. (1999). Experience-weighted attraction learning in normal form games. *Econometrica*, 67(4), 827–874. DOI 10.1111/1468-0262.00054. — **verified.** The frame and common language: an update rule with decay parameters; the model includes reinforcement learning and weighted fictitious play as special cases. Estimates are reported per dataset, not per person — **not to be leaned on** for a claim about heterogeneity between participants.
+
+**Depth of recursion: truncation.**
+
+16. Nagel, R. (1995). Unraveling in guessing games: An experimental study. *American Economic Review*, 85(5), 1313–1326. — **verified.** Depth of reasoning of one or two steps instead of the equilibrium infinity. Part 5.
+17. Camerer, C. F., Ho, T.-H., & Chong, J.-K. (2004). A cognitive hierarchy model of games. *Quarterly Journal of Economics*, 119(3), 861–898. DOI 10.1162/0033553041502225. — **verified.** A model of bounded recursion depth. Part 5.
+
+**What happens in a pair: the measured.**
+
+18. Kenny, D. A., & DePaulo, B. M. (1993). Do people know how others view them? An empirical and theoretical account. *Psychological Bulletin*, 114(1), 145–161. DOI 10.1037/0033-2909.114.1.145. — **verified word for word.** Eight social relations model studies, 569 participants; the average correlation between self-perception and meta-perception is 0.87; the picture of how one is seen is built from the self-image rather than from feedback. Plus the overestimation of the consistency of impressions produced. Parts 3 and 7.
+19. Carlson, E. N., Vazire, S., & Furr, R. M. (2011). Meta-insight: Do people really know how others see them? *Journal of Personality and Social Psychology*, 101(4), 831–846. DOI 10.1037/a0024297. — **verified.** The counterweight: meta-insight exists over and above the projection of self-assessment; the channel is weak but not null. Part 3.
+20. Gilovich, T., Savitsky, K., & Medvec, V. H. (1998). The illusion of transparency: Biased assessments of others' ability to read one's emotional states. *Journal of Personality and Social Psychology*, 75(2), 332–346. DOI 10.1037/0022-3514.75.2.332. — **verified.** Overestimation of how visible one's own states are; the mechanism is insufficient adjustment from one's own anchor. Part 7. *In the original the subject is emotional states; extending this to inner states in general is my step, and the layer is framework.*
+21. Tversky, A., & Koehler, D. J. (1994). Support theory: A nonextensional representation of subjective probability. *Psychological Review*, 101(4), 547–567. DOI 10.1037/0033-295X.101.4.547. — **mechanism verified.** Binary complementarity versus subadditivity under unpacking of a description. Part 2. *The textbook illustration with specific percentages was not independently confirmed and is not used in the text.*
+
+**Carried over from the apparatus of the fourth essay.**
+
+22. Zadeh, L. A. (1965). Fuzzy Sets. *Information and Control*, 8(3), 338–353. — the membership function. The bounds of the t-norm family follow from the axioms and require no separate source.
+
+**Taken on someone else's verification, not independently confirmed:** the issue number for McCloskey and Glucksberg in the fourth essay's list; a canonical source for the social relations model as a method.
+
+**Surfaced in passing, unverified, not used in the text:** the claim that the leading American operational research journals do not publish Soft OR work. If confirmed, a strong illustration for part 8.
+
+**Deliberately declined:** the adaptive toolbox and ecological rationality — the supports for the third layer were found inside game theory and the psychological detour proved unnecessary; mathematical modelling of marital interaction — it comes with serious criticism of its predictive claims; quantum models of cognition — for the same reason as in the fourth essay.
+
+------------------------------------------------------------------------
+
+*English version, translated from the Russian final. The title is provisional and the register of the series has not been checked. Source review complete and double-checked; no open decisions remain for the Russian version.*
