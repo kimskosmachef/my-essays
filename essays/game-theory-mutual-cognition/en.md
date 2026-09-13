@@ -72,23 +72,65 @@ First I need to separate my problem from the neighboring one, or the whole conve
 
 **Our case.** The roster of types is unknown. It's unknown whether this is even that class of games. It's unknown whether your partner thinks he's in the same game as you.
 
-The difference looks philosophical until you find where it leaves an **arithmetical trace**. And it does, and that's the shortest way to separate the two cases.
+**And here I'm obliged to make a distinction that wasn't in the first version — it comes from Burkhard Schipper, one of the authors of the formalism I lean on below.**
+
+There is not one departure from Harsanyi's scheme but three, and they are **orthogonal** — different phenomena, not shades of one.
+
+**First: unawareness.** A possibility is not being taken into account at this moment. Not "I consider it unlikely," but it doesn't figure at all. This is where the central thesis of this text lives, and this is what the hypergame apparatus is for.
+
+**Second: ambiguity.** The possibility is taken into account, but there's nothing to put a weight on it with — the mass doesn't decompose.
+
+The best-known illustration is Ellsberg's urn; he himself traces the problem back to Keynes, in whom a similar setup appears as early as 1921. In one urn there are exactly fifty red balls and fifty black. In the other, a hundred balls, red and black, in an unstated proportion. People steadily prefer to bet on the first urn — and on either colour. That cannot be reconciled with any probabilities: if you think the second urn holds fewer red, bet on black, and the preference should flip. It doesn't flip. So the point isn't which distribution a person holds, but that he holds **none**: the mass is there, and there's nothing to decompose it onto.
+
+The literature that grew from this is large and respectable — Knightian uncertainty, imprecise probabilities, non-additive measures and the Choquet integral. And **my thesis does not use it.** I say so plainly, so nothing extra gets attributed to me: it is a different phenomenon, I don't examine it and don't lean on it. In my case the person isn't struggling to weight a possibility — he **isn't holding that possibility on the list at all.**
+
+**Third: description-dependence.** The possibility is both in the account and weighted, but the weight itself shifts with how finely it was described. This is where support theory belongs — the very place subadditivity comes from.
+
+Confusing the first with the third is an error, and in the first version I made it: I labelled non-normalization "the formal signature of the difference from Harsanyi" while leaning on support theory, which is about the third case, whereas my thesis is about the first. I acknowledge it and correct it.
+
+The difference between the first case and the Bayesian scheme looks philosophical until you find where it leaves an **arithmetical trace**. And it does, and that's the shortest way to separate the two cases.
 
 A probability distribution is obliged to normalize: the sum over all options equals one. More belief in one hypothesis necessarily means less in another — the budget is fixed. This is not a property of the world but an axiom, and the whole Bayesian construction rests on it.
 
 Degrees of plausibility of frames carry no such budget. You can hold two incompatible frames both highly plausible. You can hold none of them plausible.
 
+**And let me demote that claim at once, because it is weaker than I thought.** The quantity by which I measure coincidence of frames is not a probability distribution but **the degree of overlap between two lists of the conceivable**. Each of us has his own list of what we might be playing; the question is how far those lists intersect. And the overlap of sets is not obliged to add up to anything **by its nature**, not because a person is sloppy. So non-normalization here is not a deep discovery about the non-additivity of belief but a consequence of what object I'm measuring. Better to say so myself than to leave the impression that I've produced something larger.
+
 > **Math inset 1. The simplex versus the free sum, for the second time in the series.** \[textbook\] In a Bayesian game, belief about the opponent's types lives on a **simplex**: `∑ᵢ p(typeᵢ) = 1`, `p ≥ 0`. That is the same construction that in the fourth essay separated probability from fuzziness — and here it separates a Bayesian game from a hypergame. In a hypergame the plausibilities of frames are unconnected: `μ(frameᵢ) ∈ [0,1]` for each, and **the sum is arbitrary**. Formally one line is gone; in substance the budget is gone. The difference can be checked by addition, and that isn't a figure of speech: ask a person about each frame separately, without requiring the sum to come to anything, and then add it up and see whether it equals one. **And here three different things must be separated, or the next paragraph of the main text will mislead you.** `∑ p = 1` is an **axiom**: that's how probability is built, by definition. That a person answering questions doesn't hold that sum is a **violation of the axiom by a human**, a fact about people, not about mathematics. And a free `∑ μ` is the **absence of such an axiom in the apparatus itself**: a fuzzy set doesn't violate normalization, it doesn't postulate it, and has nothing to violate. Three cases, and they must not be confused: otherwise it will look as though "the sum isn't one" is a mark of sloppiness, whereas for memberships it is the construction.
+
+**And one definition, which corrects my own earlier understanding.**
+
+I took unawareness to be a property of capacity: a possibility a person is unable to conceive. What follows from the correspondence is different and stronger. **At the moment you are not taking something into account, you are unaware of it** — even if you were taking it into account yesterday and will again tomorrow. Unawareness is momentary, not permanent.
+
+The distinction that explains this in one line, which I quote verbatim: **attention is focused, awareness is broadened.** You can be aware of something in general without focusing attention on it. The reverse is impossible.
 
 **And here I'm obliged to admit that on one stretch the Bayesian camp is right.** I say it first, before any argument.
 
-The question "do human degrees of belief normalize" was studied for thirty years, and the answer turned out to be in two parts. When there are **two** alternatives — a hypothesis and its negation — the estimates add to about one. Here a person behaves exactly like a probability textbook. But as soon as there are more alternatives and they're named separately, the sum systematically **exceeds** one, and the excess grows the more finely the fan is divided. The mechanism is known: a description named in detail collects more support than the same thing named by one general word.
+The question "do human degrees of belief normalize" was studied for thirty years, and the answer turned out to be in two parts. When there are **two** alternatives — a hypothesis and its negation — the estimates add to about one. Here a person behaves exactly like a probability textbook. But as soon as there are more alternatives and they're named separately, the sum systematically **exceeds** one, and the excess grows the more finely the fan is divided. The mechanism, however, is **not** known, and that has to be said plainly. Support theory **describes** the effect rather than explaining it: it records that a description named in detail collects more support, and stops there. There are two candidate mechanisms, and it does not distinguish between them.
+
+The first is **unawareness**: the enumeration makes explicit a possibility the person simply wasn't holding in account. An example from the correspondence: you can think "the car broke down" without suspecting the existence of the particular part that breaks — simply because you're not a specialist.
+
+The second is **attention**: the possibility was in the account all along, but under a fine-grained enumeration the person thinks about it more carefully and squeezes out what he could have derived anyway.
+
+Which of the two is at work is an open question, and I don't answer it.
 
 Hence the boundary of my claim, and it is narrow on purpose.
 
 **With two frames — "we're playing this" or "we're not playing this" — the Bayesian scheme is adequate, and a special apparatus is superfluous there.** My claim begins where there are three frames or more.
 
-I pay that price deliberately, and here's why it's acceptable. The two-frame case almost never occurs in mutual recognition. When two people talk, the possible frames are always more than two: he's arguing on the merits, or asserting himself, or speaking for a third listener, or not arguing at all but tired. Precisely where the apparatus is needed, the budget ought to break — and to break harder the richer the fan.
+I pay that price deliberately, and here's why it's acceptable. The two-frame case almost never occurs in mutual recognition. When two people talk, the possible frames are always more than two: he's arguing on the merits, or asserting himself, or speaking for a third listener, or not arguing at all but tired. **And this boundary is derived from the subject matter rather than from the effect above — that's more honest.** To lean on a measurement whose mechanism I have just declared unknown would be to prop up my main claim with something shaky. Meanwhile the same boundary follows from the construction of unawareness directly.
+
+Consider. If there are exactly two frames and they exhaust the space — "this" and "not this" — then the two lists **cannot substantively diverge**. By naming one you have thereby named the other; a negation doesn't require you to hold it in account separately. Unawareness needs a gap, and an exhaustive binary partition leaves no gap: there is nothing to drop out of the list.
+
+As soon as there are three frames or more, a gap appears. My list may contain something yours doesn't, and no negation makes up for that. That is where the boundary comes from — from the first basket, not the third. The coincidence with the effect above remains pleasant but serves as no support.
+
+Precisely where the apparatus is needed, a gap is exactly what there ought to be — and the wider the richer the fan.
+
+**And from this comes a death condition — not for the hypothesis but for the premise of this text.** It is simpler than everything that follows, and so worth naming first.
+
+Have both sides name the possible frames **freely**, with no ready-made list. Then compare the sets. If they coincide and only the weights differ, **there is no unawareness**: there is ordinary uncertainty within a shared list, Harsanyi's scheme suffices, and the whole hypergame apparatus is superfluous. It isn't only hypothesis 8 that falls — the premise the text stands on falls.
+
+And the justification for why such a check measures precisely what's needed rather than something adjacent: **what a person did not name, he was not at that moment taking into account — and therefore, by the definition above, was not aware of.** Free naming is a direct measurement of the list of the conceivable.
 
 **A separate note about the word "soft," and it belongs here rather than at the end.**
 
@@ -106,7 +148,7 @@ Now we can build.
 
 The question "are we playing the same game" has no answer "yes" or "no." It has an answer **by degree**. We may coincide on the frame by nine tenths — differing in a small thing that will surface in half an hour. We may coincide by half: the conversation goes on, but each takes away his own. We may barely coincide at all, while continuing to exchange grammatically coherent replies.
 
-I'll write this as `μ(frame_A ≈ frame_B) ∈ [0,1]` — the degree to which frames coincide. It is exactly the apparatus the fourth essay applied to a person alone, only applied to a pair.
+I'll write this as `μ(frame_A ≈ frame_B) ∈ [0,1]` — the degree to which frames coincide. And let me pin down what this quantity measures, so it isn't read as uncertainty within a shared list: **it is the degree of overlap between two lists of the conceivable.** Not "how sure am I that we're in the same game," but "how far do the sets of games each of us holds in account at all intersect." It is exactly the apparatus the fourth essay applied to a person alone, only applied to a pair.
 
 The theory that works with this case exists and is called **hypergame theory**. Its basic thought is simple and unpleasant: each player is rational — but **inside his own, possibly wrong, model of the other's game**. That is, there is no single game of incomplete information. There are two different games, one in each head, and they are not obliged to coincide.
 
@@ -155,6 +197,8 @@ Each conducts the game by his own set of rules. By his own way of updating the m
 Further on I'll be arguing that the channel between two people loses information by construction. But from loss on a single transmission it **does not follow** that there's no convergence under repeated exchange. A noisy channel used repeatedly still transmits — all of communications rests on that. So an attentive reader will ask: fine, one reply loses something, but a hundred conversations?
 
 Different procedures answer that. Two people applying different update rules **do not converge even under unlimited exchange**: they are computing different fixed points, and there is simply nothing to converge to. This isn't about loss in the channel — it's about the absence of a common limit.
+
+**And let me narrow the claim at once, or part 12 will contradict it.** Repetition doesn't help **in the informational register** — that is, when what travels down the channel are weights on possibilities both already conceive. But a conversation carries two loads, not one: besides information it transmits **awareness** — the possibility itself, absent from the interlocutor's list. And here repetition does work: a possibility once named enters the list and stays there. This part's claim is about the first load, not the second.
 
 **And here the layer has a formal support, and it's a theorem.**
 
@@ -300,6 +344,14 @@ On the other side, what was already said in the third part: the receiver, trying
 
 Add the two halves. **The sender believes he transmitted more than he did. The receiver believes he received — while in fact he substituted himself.**
 
+**And here it has to be said that there are in fact two channels, with different properties.**
+
+Down the first travels information — weights on possibilities both sides already hold in account. It is lossy, and everything said above about the collapse applies to it.
+
+Down the second travels **awareness** — the possibility itself. And it is built differently. An example from the correspondence: the sentence "you may or may not die of kuppakupitis" conveys **zero information** about probability — it shifts no weights, because it exhausts the logical space. And at the same time it creates awareness: now you know such a thing exists.
+
+The two channels don't reduce to one another, and that will be needed further on.
+
 **The formulation this part was written for: the channel is not only lossy, it displays no indicator of loss.**
 
 The error isn't damped because neither side suspects its size. Both leave the conversation with a sense that they understood each other — and that sense is unconnected to whether they did. That is why the two-sided procedure doesn't converge while the participants don't notice and see no need to fix anything.
@@ -358,7 +410,15 @@ As last time, I take the **soft variant**: the accompanying predictions stand be
 >
 > None of the three **belongs to the hypothesis**, and their failure is not its refutation. The separation is fixed here, **before any measurement**.
 
-**How to kill it.** There are five conditions, but they strike different storeys of the construction, and folding them into one list would be dishonest accounting. I'll separate them by tier.
+**And at once — why non-normalization sits in the core of the hypothesis although I demoted it in part 2.** The question is legitimate, and without an answer the reader will conclude I forgot my own demotion.
+
+What was demoted was **one** claim: that a free sum is a deep discovery about the non-additivity of human belief. It is not — it is a consequence of what object I am measuring. But the prediction grows out of that consequence.
+
+If what is measured is **the degree of overlap between two lists of the conceivable**, then forced normalization is the imposition of an alien shape on the object: an overlap of sets does not fit into a simplex, and a model that forces it there is bound to lose. So a representation without normalization should fit the data better — not because belief is non-additive, but because the simplex is the wrong shape for this quantity.
+
+So the hypothesis is motivated from the first basket, where the thesis sits, and not from the claim I withdrew.
+
+**How to kill it.** There are **four** conditions, and they strike different storeys of the construction: folding them into one list would be dishonest accounting. I'll separate them by tier.
 
 **Tier one: these kill the core. Any one of the two suffices.**
 
@@ -372,11 +432,15 @@ As last time, I take the **soft variant**: the accompanying predictions stand be
 
 **Operational for the third layer.** If knowing that your partner uses a different set of rules changes not a single one of your actions — the third layer is descriptive rather than instrumental, and as a basis it is dead regardless of whether the rules differ.
 
-**Tier three: this knocks out the motivation and leaves the core.**
+**The tally, so as not to inflate it.** There are **four** death conditions: two fell the core, two strike at instrumentality. Two kinds of defeat, and they must not be conflated — saying "any one of four suffices" would pass one off as another.
 
-**Descriptive, auxiliary.** If the sums of plausibility over frames converge to one even with three alternatives — the plausibility argument on which the motivation rests collapses. The core will survive: the question "do people's beliefs normalize" and the question "does the unnormalized model win on data" are different, and I separate them below. But the support will vanish, and it will have to be looked for anew.
+**And the descriptive measurement, which in the previous version stood as a fifth condition, has been taken out of this list — that's a separate story.**
 
-**The tally, so as not to inflate it.** Two conditions fell the core. Two more strike at instrumentality, one at the motivation. Five items, three different kinds of defeat; saying "any one of five suffices" would pass one off as another.
+The measurement runs like this: ask a person about each frame separately, without requiring the weights to converge to anything, then add up the sum. With two alternatives it converges to one; with three or more it exceeds one, and the excess grows with the fineness of the fan. The design is preserved entirely — what changes is its status.
+
+The reason for the demotion is **not** that the phenomenon belongs to the third departure while the core belongs to the first. The reason is stricter and less comfortable: **we do not know which departure the mechanism of this effect belongs to.** It is said plainly above — there are two candidates, unawareness and attention, and support theory does not distinguish between them. And a measurement whose mechanism is undetermined cannot carry a verdict: whether it confirms or fails, I will not be able to say what exactly was confirmed.
+
+So it stands alongside as an accompanying observation: it shows that judgment shifts at all with how finely the possibilities are named. That is a fact about people, interesting in itself, and it leads to the open question from part 2. But it was designated a death condition in error, and I am correcting that.
 
 **And the selection condition, without which the test is doomed before data collection begins.** The compositional condition and prediction (c) are measured on pairs with **middling** mutual understanding — with a degree of coincidence around 0.7 — and not on well-attuned ones. The reason is in the fifth part, and one has to be careful with the quantities here, because there are two of them and they live at different depths. The spread between operations at depth three is one tenth at a coincidence of 0.95 and six tenths at 0.7 — that is an illustration of scale. But the working quantity is the skew at depth two, because the measurement doesn't reach deeper: at a coincidence of 0.7 it equals 0.210, at 0.9 it falls to 0.090. Intuition says take the pairs that understand each other well, because things are "cleaner" there. Here it leads into a dead end, and the selection criterion has to be fixed in advance, together with the primary outcome, not chosen along the way.
 
@@ -432,6 +496,8 @@ Prepared in advance, not after the draft.
 
 **"Soft here and soft in the fourth essay are the same word, so the same business."** No, and I separated that in part 2: different traditions, an accidental coincidence of term.
 
+**"You're conflating ambiguity with unawareness — those are different literatures."** This will come from any economist, and fairly, because in the first version I really was conflating them. The distinction now standing in part 2 came from a specialist in unawareness before publication, not derived by me after the fact. And the ambiguity basket is declared unused there in plain text: the literature exists, the phenomenon is different, I don't use it.
+
 **"You've stretched laboratory effects obtained on students in artificial tasks over live interaction."** A fair objection, and I lay it out myself. The answer follows the fourth essay: these results are taken as **evidence that a mechanism exists**, not as a measurement of its magnitude in anyone's particular life. That people truncate recursion at the second step in a game with numbers doesn't mean they truncate it at exactly the second step in a conversation with their wife. It means only that the depth is finite and small, and that is all I need.
 
 **And the self-criticism better spoken by me.** It is heavier here than in the fourth essay, and I won't soften it.
@@ -440,7 +506,7 @@ Prepared in advance, not after the draft.
 
 **And again the structure of the hypothesis was chosen to be durable.** Three predictions moved outside; their failure doesn't fell the core. From the outside it looks like this: a man advanced a claim, arranged in advance that most of the construction couldn't count as its refutation, and measured nothing.
 
-I assemble that chain first, because a reader will assemble it himself. What I can say against it: the separation was fixed **before** the measurement, not after a failed one, and it lies in a public repository with dates. Each failure has damage named in advance. Two conditions fell the core — the same number as in the fourth essay — and beyond them there are three more, striking at instrumentality and at motivation, each with its own named damage. I won't boast about the number five: these are different kinds of defeat, and heaping them together for a pretty figure would be doing exactly what I'm being accused of.
+I assemble that chain first, because a reader will assemble it himself. What I can say against it: the separation was fixed **before** the measurement, not after a failed one, and it lies in a public repository with dates. Each failure has damage named in advance. Two conditions fell the core — the same number as in the fourth essay — and beyond them there are two more, striking at instrumentality, each with its own named damage. The fifth, which stood here in the previous version, I removed from the list myself: the mechanism of the effect is undetermined, and a measurement with an undetermined mechanism cannot carry a verdict. I won't boast about the number in any case: these are different kinds of defeat, and heaping them together for a pretty figure would be doing exactly what I'm being accused of.
 
 But this is weaker than a conducted experiment, and I don't want one taken for the other.
 
@@ -499,7 +565,8 @@ The whole essay in the language of formulas — part by part. There are four car
 
 **2. The Fork: Frame versus Payoffs** · \[textbook\]
 
-- `∑ᵢ p(typeᵢ) = 1` versus `∑ᵢ μ(frameᵢ)` — free — The arithmetical trace of the difference. In a Bayesian game belief lives on a simplex, the budget is fixed; a hypergame has no budget.
+- `lists_A ∩ lists_B` versus `one list, different weights` — **The first departure from Harsanyi, and the main one.** The Bayesian scheme presumes a shared list of possibilities under differing weights; unawareness means the **lists differ**. Different spaces of the conceivable, not different measures on a shared one. This is where the central thesis lives.
+- `∑ᵢ p(typeᵢ) = 1` versus `∑ᵢ μ(frameᵢ)` — free — **The third departure: description-dependence.** The line formalizes not the difference from Harsanyi in general but the shift of judgment with the fineness of description. The arithmetical trace of the difference. In a Bayesian game belief lives on a simplex, the budget is fixed; a hypergame has no budget.
 - three different things: `∑ p = 1` an axiom · a human's violation of the axiom · the absence of the axiom for `μ` — Without this distinction the signature from the fourth essay is devalued: "the sum isn't one" will look like a mark of sloppiness, whereas for memberships it is the construction.
 - `n = 2` ⟹ normalization holds; `n ≥ 3` ⟹ it breaks, and the more so the larger `n` — The boundary of the claim, stated first. On two frames the Bayesian camp is right.
 
@@ -544,7 +611,7 @@ The whole essay in the language of formulas — part by part. There are four car
 - `¬(A ∧ B) = ¬A ∨ ¬B` — The rule by which the previous line is obtained. It justifies exactly as many members of the "or" as stand in the "and" of the content; it does not permit adding to the disjunction a condition that isn't in `H`.
 - `I = O₁ ∧ O₂`; `¬I ⟹ ¬basis(H)`, not `¬H` — The second tier: instrumentality. Operationality for frames and for rules is not part of the core. A thesis can remain true and still turn out useless — a different defeat, and writing it into the death of the core would inflate the tally.
 - `¬D ⟹ support(H) = ∅`, while `H` stands — The third tier: motivation. Failure of the descriptive condition knocks out the plausibility argument but not the core.
-- tally: 2 on the core, 2 on instrumentality, 1 on motivation — Five items, three kinds of defeat. Folding them into one disjunction is the dishonest accounting that part 9 refuses in plain text.
+- tally: 2 on the core, 2 on instrumentality — Four conditions, two kinds of defeat. The descriptive measurement is not counted: it was removed from the death conditions because the mechanism of the effect is undetermined (see part 9). Folding them into one disjunction is the dishonest accounting that part 9 refuses in plain text.
 
 **9. The Emblem: Separateness Instead of Complexity**
 
@@ -571,6 +638,16 @@ The whole essay in the language of formulas — part by part. There are four car
 7. Howard, N., Bennett, P., Bryant, J., & Bradley, M. Manifesto for a theory of drama and irrational choice. — **verified with a caveat**: there are four authors, not "Howard et al." without a roster, and the year differs across sources. The cause is not a citation error: the text appeared **twice** — in the *Journal of the Operational Research Society*, 44, 99–103, and in *Systemic Practice and Action Research*, 6, 429–434. Hence both dates.
 8. Howard, N. (1994). Drama theory and its relation to game theory. Parts 1 and 2. *Group Decision and Negotiation*, 3(2), 187–206 and 207–235. — **verified.** The canonical full exposition of drama theory; the manifesto ranks below it.
 9. Heifetz, A., Meier, M., & Schipper, B. C. (2006). Interactive unawareness. *Journal of Economic Theory*, 130(1), 78–94. DOI 10.1016/j.jet.2005.02.007. — **double-checked**, the DOI added during duplication. The canonical source on games with unawareness. Notable criticism worth knowing by the discipline of the series: Halpern, J. Y., & Rêgo, L. C. (2008). Interactive unawareness revisited. *Games and Economic Behavior*, 62(1), 232–262.
+9a. Schipper, B. C. — **personal communication, September 2026.** Four exchanges. The separation of three orthogonal phenomena — unawareness, ambiguity, description-dependence; the definition of unawareness via not taking into account ("attention is focused, awareness is broadened"); the broken-car-part example; and the two candidate mechanisms behind the description-fineness effect — unawareness versus attention — with the point that support theory does not distinguish them. Parts 2, 4, 7, 9. *An unpublished source, flagged as such; every place the text leans on it is named in the text itself.*
+
+**Ambiguity — the literature the text does not use.**
+
+Cited in part 2 so the reader doesn't take one phenomenon for another. It plays no part in any load-bearing claim.
+
+- Keynes, J. M. (1921). *A Treatise on Probability.* London: Macmillan. — the setup Ellsberg traces his problem back to. *Not verified in this pass.*
+- Knight, F. H. (1921). *Risk, Uncertainty and Profit.* Boston: Houghton Mifflin. — the original separation of risk (probability known) from uncertainty (unknown). *A settled classic, not verified in this pass.*
+- Ellsberg, D. (1961). Risk, Ambiguity, and the Savage Axioms. *The Quarterly Journal of Economics*, 75(4), 643–669. — **verified.** The two-urn paradox: a steady preference for the known proportion cannot be reconciled with any distribution and so violates Savage's axioms. The phenomenon made empirical.
+- Schmeidler, D. (1989). Subjective Probability and Expected Utility without Additivity. *Econometrica*, 57(3), 571–587. — **verified.** The formal apparatus: weakening the independence axiom to comonotonic independence yields a non-additive probability and utility via the Choquet integral. Covers cases such as the Ellsberg paradox that are inconsistent with additive expected utility.
 
 **The rigorous results the construction stands on.**
 
@@ -609,3 +686,12 @@ The whole essay in the language of formulas — part by part. There are four car
 ------------------------------------------------------------------------
 
 *English version, translated from the Russian final. The title is provisional and the register of the series has not been checked. Source review complete and double-checked; no open decisions remain for the Russian version.*
+
+-----
+
+## Acknowledgements
+
+**Burkhard Schipper** — for the separation of three phenomena, which rebuilt part 2, and for the definition of unawareness via not taking into account. The formulation "attention is focused, awareness is broadened" and the broken-car-part example are quoted from correspondence with his permission.
+
+**Nick Haslam** — for the correction to the fourth essay in the series, which indirectly bears on this one too.
+
